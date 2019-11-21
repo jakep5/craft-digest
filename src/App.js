@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import LandingPage from './routes/LandingPage/LandingPage'
+import { Route, Switch } from 'react-router-dom'
+import SignUpPage from './routes/SignUpPage/SignUpPage'
+import SignInPage from './routes/SignInPage/SignInPage'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="app">
+        <main className='App'>
+          <Switch>
+            <Route 
+              exact
+              path={"/"}
+              component={LandingPage}
+            />
+            <Route
+              exact
+              path={"/signUp"}
+              component={SignUpPage}
+            />
+            <Route
+              exact
+              path={"/signIn"}
+              component={SignInPage}
+            />
+            <Route
+              exact
+              path={"/triedList"}
+              component={triedList}
+            />
+          </Switch>
+        </main>
+      </div>
+    )
+  }
 }
+
 
 export default App;

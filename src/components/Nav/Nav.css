@@ -1,0 +1,16 @@
+nav {
+  position: fixed;
+  text-align: right;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+#signUp {
+    margin-right: 1%;
+}
+
+#signIn {
+    margin-right: 1%;
+}
