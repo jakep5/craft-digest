@@ -3,6 +3,7 @@ import LandingPage from './routes/LandingPage/LandingPage'
 import { Route, Switch } from 'react-router-dom'
 import SignUpPage from './routes/SignUpPage/SignUpPage'
 import SignInPage from './routes/SignInPage/SignInPage'
+import TriedList from './routes/TriedList/TriedList'
 
 class App extends React.Component {
   render() {
@@ -28,7 +29,7 @@ class App extends React.Component {
             <Route
               exact
               path={"/triedList"}
-              component={triedList}
+              component={TriedList}
             />
           </Switch>
         </main>
