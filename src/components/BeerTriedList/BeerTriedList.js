@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import exampleBeers from '../../store'
-import BeerListItem from './BeerListItem/BeerListItem'
+import BeerListItem from '../BeerListItem/BeerListItem'
 import './BeerTriedList.css'
 
 

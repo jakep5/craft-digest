@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './BeerListItem.css'
 
 export default class BeerListItem extends Component {
 

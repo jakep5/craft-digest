@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { Link } from 'react-router-dom'
-import AddBeerSearchForm from '../../components/AddBeerSearchForm/AddBeerSearchForm'
+import AddBeerForm from '../../components/AddBeerForm/AddBeerForm'
 import AddBeerSearchResults from '../../components/AddBeerSearchResults/AddBeerSearchResults'
 import './AddToListPage.css'
 
 export default class AddToListPage extends Component {
 
-    handleSubmit = () => {
-        const 
-    }
+    /* handleSubmit = (searchTerms) => {
+        const beer = searchTerms.beer;
+        const brewery = searchTerms.brewery;
+
+        fetch()
+    } */
+
     render() {
         return (
             <div>
@@ -23,11 +27,11 @@ export default class AddToListPage extends Component {
                 </header>
                 <section className="addBeerSection">
                     <div className="addBeerSearchFormHolder">
-                        <AddBeerSearchForm />
+                        <AddBeerForm />
                     </div>
-                    <div className="AddBeerSearchResultsHolder">
+                    {/* <div className="AddBeerSearchResultsHolder">
                         <AddBeerSearchResults handleSubmit={this.handleSubmit}/>
-                    </div>
+                    </div> */}
                 </section>
                 <footer role="returnToTop">
                     <a>Return to top</a>
