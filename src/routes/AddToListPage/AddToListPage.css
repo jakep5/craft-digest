@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+nav,
+footer {
+  padding: 1% 0;
+  background-color: #aaa;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  text-align: right;
+}
+
+a.logOut {
+    margin-right: 2%;
+}
+
+header {
+  padding: .5% 0;
+}
+
+h1.addBeerTitle {
+    margin-top: 5%;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+
+section.addBeerSection {
+    overflow-y: auto;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+form#beerSearchForm {
+    margin-top: -5%;
+}
+
+button.submitBeerForm {
+    position: relative;
+}
+
+h3.beerItem {
+    margin-top: 5%;
+}
+  

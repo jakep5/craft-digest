@@ -21,7 +21,9 @@ export default class TriedList extends React.Component {
                 </nav>
                 <header role="banner">
                     <h1 class="triedList">Tried List</h1>
-                    <button id="addToTried"> + Add to list</button>
+                    <Link to="/addBeer">
+                        <button id="addToTried"> + Add to list</button>
+                    </Link>
                 </header>
 
                 <section id="section1">
