@@ -8,9 +8,6 @@ import './AddToListPage.css'
 
 export default class AddToListPage extends Component {
 
-    handleSubmit = (newItem) => {
-        this.props.handleBeerAdd(newItem)
-    }
 
     render() {
         return (

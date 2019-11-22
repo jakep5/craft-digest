@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import exampleBeers from '../store'
 
 export const BeerContext = React.createContext();
 
-export default class BeerContext extends Component {
+export class BeerProvider extends React.Component {
 
     constructor(props) {
         super(props);

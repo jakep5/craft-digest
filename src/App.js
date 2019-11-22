@@ -9,19 +9,6 @@ import AddToListPage from './routes/AddToListPage/AddToListPage';
 
 class App extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      triedBeers: exampleBeers
-    }
-  }
-
-  handleBeerAdd = (newBeer) => {
-    this.setState({
-      triedBeers: [...exampleBeers, newBeer]
-    })
-    console.log(this.state.triedBeers)
-  }
 
   render() {
 
@@ -53,8 +40,6 @@ class App extends React.Component {
                   exact
                   path={"/triedList"}
                   component={TriedList}
-                  triedBeers={this.state.triedBeers}
-                  handleBeerAdd={(newBeer) => this.handleBeerAdd(newBeer)}
                 />
                 <Route
                   exact
