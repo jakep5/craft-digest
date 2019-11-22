@@ -1,0 +1,36 @@
+div.addBeerHolder {
+    display: inline-block;
+    height: 300px;
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+}
+
+.addBeerHolder label {
+    display: inline-block;
+    width: 40%;
+    margin-top: 5%;
+}
+
+label#tastingNotes {
+    position: relative;
+    bottom: 40px;
+}
+
+textArea {
+    display: inline-block;
+    margin-top: 5%;
+}
+textarea#beerTastingNotes {
+    height: 100px;
+    margin-top: 40px;
+}
+
+button {
+    display: inline-block;
+    padding: 15px 40px;
+}
+
+form {
+    display: inline-block;
+}

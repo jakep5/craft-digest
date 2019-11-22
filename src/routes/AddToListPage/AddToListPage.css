@@ -46,6 +46,7 @@ section {
 
 section.addBeerSection {
     overflow-y: auto;
+    text-align: center;
 }
 
 section:nth-child(even) {
@@ -63,4 +64,6 @@ button.submitBeerForm {
 h3.beerItem {
     margin-top: 5%;
 }
+
+
   

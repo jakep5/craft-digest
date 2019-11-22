@@ -9,37 +9,44 @@ import AddToListPage from './routes/AddToListPage/AddToListPage';
 class App extends React.Component {
   render() {
     return (
-      <div className="app">
-        <main className='App'>
-          <Switch>
-            <Route 
-              exact
-              path={"/"}
-              component={LandingPage}
-            />
-            <Route
-              exact
-              path={"/signUp"}
-              component={SignUpPage}
-            />
-            <Route
-              exact
-              path={"/signIn"}
-              component={SignInPage}
-            />
-            <Route
-              exact
-              path={"/triedList"}
-              component={TriedList}
-            />
-            <Route
-              exact
-              path={"/addBeer"}
-              component={AddToListPage}
-            />
-          </Switch>
-        </main>
-      </div>
+      <> 
+        <head>
+{/*           <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+ */}        </head>
+        <body>
+          <div className="app">
+            <main className='App'>
+              <Switch>
+                <Route 
+                  exact
+                  path={"/"}
+                  component={LandingPage}
+                />
+                <Route
+                  exact
+                  path={"/signUp"}
+                  component={SignUpPage}
+                />
+                <Route
+                  exact
+                  path={"/signIn"}
+                  component={SignInPage}
+                />
+                <Route
+                  exact
+                  path={"/triedList"}
+                  component={TriedList}
+                />
+                <Route
+                  exact
+                  path={"/addBeer"}
+                  component={AddToListPage}
+                />
+              </Switch>
+            </main>
+          </div>
+        </body>
+      </>
     )
   }
 }
