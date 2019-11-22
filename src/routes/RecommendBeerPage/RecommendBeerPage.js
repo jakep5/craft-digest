@@ -13,9 +13,7 @@ export default class RecommendBeerPage extends Component {
 
                     <section class="recommendBeerSection">
 
-                        <div class="recommendedBeerHolder">
-                            <RecommendedBeer />
-                        </div>
+                       <RecommendedBeer />
 
                     </section>
                 </main>

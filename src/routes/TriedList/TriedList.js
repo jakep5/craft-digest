@@ -5,10 +5,16 @@ import BeerTriedList from '../../components/BeerTriedList/BeerTriedList'
 import FavoriteBeerType from '../../components/FavoriteBeerType/FavoriteBeerType'
 import FavoriteBrewery from '../../components/FavoriteBrewery/FavoriteBrewery'
 import AverageAbv from '../../components/AverageAbv/AverageAbv'
+import exampleBeers from '../../store'
 import './TriedList.css'
 
 export default class TriedList extends React.Component {
+
+
     render () {
+
+        let triedBeers = exampleBeers
+
         return (
             <>
                 <nav role="navigation">

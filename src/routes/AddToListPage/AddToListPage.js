@@ -6,6 +6,10 @@ import AddBeerSearchResults from '../../components/AddBeerSearchResults/AddBeerS
 import './AddToListPage.css'
 
 export default class AddToListPage extends Component {
+
+    handleSubmit = () => {
+        const 
+    }
     render() {
         return (
             <div>
@@ -22,7 +26,7 @@ export default class AddToListPage extends Component {
                         <AddBeerSearchForm />
                     </div>
                     <div className="AddBeerSearchResultsHolder">
-                        <AddBeerSearchResults />
+                        <AddBeerSearchResults handleSubmit={this.handleSubmit}/>
                     </div>
                 </section>
                 <footer role="returnToTop">
