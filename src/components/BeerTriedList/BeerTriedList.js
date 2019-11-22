@@ -13,7 +13,7 @@ export default class BeerTriedList extends React.Component {
 
         return (
             <div className ="beerTriedListHolder">
-                {exampleBeers.map((beer) =>
+                {triedBeers.map((beer) =>
                     <BeerListItem 
                         beerName={beer.name}
                         beerBrewery={beer.brewery}
