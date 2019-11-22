@@ -5,13 +5,21 @@ export default class AddBeerSearchForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        const { beerName, breweryName } = e.target;
+        const beerName = document.getElementById('beerName').value
+        const beerBrewery = document.getElementById('beerBrewery').value
+        const beerBreweryLocation = document.getElementById('beerBreweryLocation').value
+        const beerTastingNotes = document.getElementById('beerTastingNotes').value
+        const beerAbv = document.getElementById('beerAbv').value
 
-        const searchTerms = { 
-            beer: beerName,
-            brewery: breweryName
+        const newItem = { 
+            "name": beerName,
+            "brewery": beerBrewery,
+            "brewery_location": beerBreweryLocation,
+            "tasting_notes":beerTastingNotes,
+            "abv": parseInt(beerAbv)
         }
-        this.props.handleSubmit(searchTerms)
+
+        this.props.handleSubmit(newItem)
     }
 
     render() {
