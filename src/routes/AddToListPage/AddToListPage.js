@@ -18,7 +18,7 @@ export default class AddToListPage extends Component {
                     </Link>
                 </nav>
                 <header role="banner">
-                    <h1 class="addBeerTitle">Add a beer to your list:</h1>
+                    <h1 class="addBeerTitle">Add a beer to your list!</h1>
                 </header>
                 <section className="addBeerSection">
                     <div className="addBeerSearchFormHolder">

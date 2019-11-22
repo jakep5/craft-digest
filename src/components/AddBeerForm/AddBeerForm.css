@@ -12,10 +12,10 @@ div.addBeerHolder {
     margin-top: 5%;
 }
 
-label#tastingNotes {
+/* label#tastingNotes {
     position: relative;
-    bottom: 40px;
-}
+    bottom: 10px;
+} */
 
 textArea {
     display: inline-block;
@@ -26,11 +26,19 @@ textarea#beerTastingNotes {
     margin-top: 40px;
 }
 
-button {
+input#submitButton {
     display: inline-block;
     padding: 15px 40px;
+    margin-right: 30%;
+    margin-top: 5%;
 }
+
 
 form {
     display: inline-block;
+    width: 100%;
+}
+
+legend {
+    font-size: 30px;
 }

@@ -32,22 +32,24 @@ export default class AddBeerSearchForm extends Component {
                         <form id="beerSearchForm" onSubmit={(e) => this.handleSubmit(e)}>
                                 <legend className="formLegend">Add a beer:</legend>
 
-                                <label for="beerName">Name of beer:</label>
+                                <label for="beerName" required>Name of beer:</label>
                                 <input type="text" class="beerName" id="beerName"/>
 
-                                <label for="beerBrewery">Brewery:</label>
+                                <label for="beerBrewery" required>Brewery:</label>
                                 <input type="text" class="breweryName" id="beerBrewery"/>
 
-                                <label for="beerBreweryLocation">Brewery location:</label>
+                                <label for="beerBreweryLocation" required>Brewery location:</label>
                                 <input type="text" class="breweryLocation" id="beerBreweryLocation" />
 
-                                <label for="beerTastingNotes" id="tastingNotes">Tasting notes:</label>
+                                <label for="beerTastingNotes" id="tastingNotes" required>Tasting notes:</label>
                                 <textarea type="text" class="tastingNotes" id="beerTastingNotes"/>
 
-                                <label for="beerAbv">ABV:</label>
-                                <input type="number" class="abvInput" id="beerAbv" />
+                                <label for="beerAbv" required>ABV:</label>
+                                <input type="number" class="abvInput" id="beerAbv" step=".01"/>
 
-                            <button class="submitBeer" type="submit" for="beerSearchForm">Add!</button>
+                                <label for="submitButton" required>{null}</label>
+                                <input type="submit" value="Add beer" id="submitButton" />
+                               
                         </form>
                     </div>
         )

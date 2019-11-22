@@ -21,7 +21,7 @@ export default class BeerTriedList extends React.Component {
                         {value.beers.map((beer) =>
                             <BeerListItem 
                                 beerName={beer.name}
-                                beerBrewery={beer.brewery}
+                                beerBrewery={beer.brewery_name}
                                 beerBreweryLocation={beer.brewery_location}
                                 beerTastingNotes={beer.tasting_notes}
                                 beerAbv={beer.abv}
