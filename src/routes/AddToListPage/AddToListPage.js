@@ -9,8 +9,7 @@ import './AddToListPage.css'
 export default class AddToListPage extends Component {
 
     handleSubmit = (newItem) => {
-        exampleBeers.push(newItem)
-        console.log(exampleBeers)
+        this.props.handleBeerAdd(newItem)
     }
 
     render() {
@@ -33,7 +32,9 @@ export default class AddToListPage extends Component {
                     </div> */}
                 </section>
                 <footer role="returnToTop">
-                    <a>Return to top</a>
+                    <Link to="/triedList">
+                        <a>Return to tried list</a>
+                    </Link>
                 </footer>
             </div>
         )

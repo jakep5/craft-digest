@@ -30,7 +30,7 @@ export default class TriedList extends React.Component {
                 </header>
 
                 <section id="section1">
-                    <BeerTriedList />
+                    <BeerTriedList triedBeers={this.props.triedBeers}/>
                     <a class="expandList">Click to see expanded list</a>
                 </section>
 

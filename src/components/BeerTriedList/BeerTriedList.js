@@ -9,7 +9,7 @@ import './BeerTriedList.css'
 export default class BeerTriedList extends React.Component {
     render() {
 
-        let triedBeers = exampleBeers
+        let triedBeers = this.props.triedBeers
 
         return (
             <div className ="beerTriedListHolder">
