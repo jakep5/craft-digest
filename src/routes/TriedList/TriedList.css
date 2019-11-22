@@ -26,11 +26,11 @@ nav {
   text-align: right;
 }
 
-a.logOut {
+a#logOutLink {
     margin-right: 2%;
 }
 
-a.recommendBeer {
+a#recommendBeer {
     margin-right: 2%;
 }
 
@@ -46,30 +46,13 @@ section {
 
 section#section1 {
     padding: 15% 0;
-    overflow-y: auto;
+
 }
 
 section:nth-child(even) {
   background-color: #ddd;
 }
 
-div.leftList {
-    display: block;
-    width: 45%;
-    float: left;
-    margin-top: -13%;
-    text-align: center;
-    margin-left: 2%;
-}
-
-div.rightList {
-    display: block;
-    width: 45%;
-    float: right;
-    margin-top: -13%;
-    text-align: center;
-    margin-right: 2%;
-}
 
 a.expandList {
     position: relative;
