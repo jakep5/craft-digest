@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Link } from 'react-router-dom'
+import BeerSearchList from '../../components/BeerSearchList/BeerSearchList'
 import './TriedList.css'
 
 export default class TriedList extends React.Component {
@@ -21,61 +22,8 @@ export default class TriedList extends React.Component {
                 </header>
 
                 <section id="section1">
-                    <div class="leftList">
-
-                        <h3 class="beerList">Beer 1</h3>
-                        <p>Brewery/loc: ____</p>
-                        <p>Tasting notes: ____</p>
-                        <p>Hop/malt/etc content: ____</p>
-
-                        <h3 class="beerList">Beer 2</h3>
-                        <p>Brewery/loc: ____</p>
-                        <p>Tasting notes: ____</p>
-                        <p>Hop/malt/etc content: ____</p>
-
-                        <h3 class="beerList">Beer 3</h3>
-                        <p>Brewery/loc: ____</p>
-                        <p>Tasting notes: ____</p>
-                        <p>Hop/malt/etc content: ____</p>
-
-                        <h3 class="beerList">Beer 4</h3>
-                        <p>Brewery/loc: ____</p>
-                        <p>Tasting notes: ____</p>
-                        <p>Hop/malt/etc content: ____</p>
-
-                        <h3 class="beerList">Beer 5</h3>
-                        <p>Brewery/loc: ____</p>
-                        <p>Tasting notes: ____</p>
-                        <p>Hop/malt/etc content: ____</p>
-
-                    </div>
-                    <div class="rightList">
-
-                        <h3 class="beerList">Beer 6</h3>
-                        <p>Brewery/loc: ____</p>
-                        <p>Tasting notes: ____</p>
-                        <p>Hop/malt/etc content: ____</p>
-
-                        <h3 class="beerList">Beer 7</h3>
-                        <p>Brewery/loc: ____</p>
-                        <p>Tasting notes: ____</p>
-                        <p>Hop/malt/etc content: ____</p>
-
-                        <h3 class="beerList">Beer 8</h3>
-                        <p>Brewery/loc: ____</p>
-                        <p>Tasting notes: ____</p>
-                        <p>Hop/malt/etc content: ____</p>
-
-                        <h3 class="beerList">Beer 9</h3>
-                        <p>Brewery/loc: ____</p>
-                        <p>Tasting notes: ____</p>
-                        <p>Hop/malt/etc content: ____</p>
-
-                        <h3 class="beerList">Beer 10</h3>
-                        <p>Brewery/loc: ____</p>
-                        <p>Tasting notes: ____</p>
-                        <p>Hop/malt/etc content: ____</p>
-
+                    <div class="searchResults">
+                        <BeerSearchList />
                     </div>
                     <a class="expandList">Click to see expanded list</a>
                 </section>
