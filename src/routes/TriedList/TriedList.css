@@ -31,7 +31,8 @@ a#logOutLink {
 }
 
 a#recommendBeer {
-    margin-right: 2%;
+    float: left;
+    margin-left: 2%;
 }
 
 header {

@@ -10,7 +10,7 @@ export default class BeerListItem extends Component {
                 <p className="beerBrewery">Brewery: {this.props.beerBrewery}</p>
                 <p className="beerBreweryLocation">Brewery location: {this.props.beerBreweryLocation}</p>
                 <p className="beerTastingNotes">Tasting notes: {this.props.beerTastingNotes}</p>
-                <p className="beerAbv">ABV: {this.props.beerAbv}</p>
+                <p className="beerAbv">ABV: {this.props.beerAbv}%</p>
             </div>
         )
     }
