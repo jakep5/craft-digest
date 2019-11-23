@@ -19,12 +19,21 @@ export class BeerProvider extends React.Component {
         console.log(this.state.beers)
     }
 
+    deleteBeer = (beerId) => {
+        const afterDeleteBeers = this.state.beers.filter(br =>
+            br.id !==beerId)
+        this.setState({
+            beers: afterDeleteBeers
+        })
+    }
+
 
     render() {
 
         const contextValue = {
             beers: this.state.beers,
-            handleAddBeer: this.handleAddBeer
+            handleAddBeer: this.handleAddBeer,
+            deleteBeer: this.deleteBeer
         }
 
         return (

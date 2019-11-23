@@ -25,6 +25,7 @@ export default class BeerTriedList extends React.Component {
                                 beerBreweryLocation={beer.brewery_location}
                                 beerTastingNotes={beer.tasting_notes}
                                 beerAbv={beer.abv}
+                                beerId={beer.id}
                             />
                         )}
                     </div>

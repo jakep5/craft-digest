@@ -1,6 +1,6 @@
 let exampleBeers = [
     {
-        "id"
+        "id": 1,
         "name": "Spotted Cow",
         "brewery_name": "New Glarus Brewing Company",
         "brewery_location": "New Glarus, WI",
@@ -8,6 +8,7 @@ let exampleBeers = [
         "abv": 5,
     },
     {
+        "id": 2,
         "name": "Miller Lite",
         "brewery_name": "Miller Brewery",
         "brewery_location": "Milwaukee, WI",
@@ -15,6 +16,7 @@ let exampleBeers = [
         "abv": 4.2,
     },
     {
+        "id": 3,
         "name": "Spaten Optimator",
         "brewery_name": "Spaten Brewery",
         "brewery_location": "Munich, Germany",
@@ -22,6 +24,7 @@ let exampleBeers = [
         "abv": 7,
     },
     {
+        "id": 4,
         "name": "New Belgium Voodoo Ranger IPA",
         "brewery_name": "New Belgium Brewery",
         "brewery_location": "Fort Collins, CO",
@@ -29,6 +32,7 @@ let exampleBeers = [
         "abv": 6,
     },
     {
+        "id": 5,
         "name": "New Belgium Fat Tire",
         "brewery_name": "New Belgium Brewery",
         "brewery_location": "Fort Collins, CO",
@@ -36,6 +40,7 @@ let exampleBeers = [
         "abv": 5,
     },
     {
+        "id": 6,
         "name": "Bell's Two Hearted Ale",
         "brewery_name": "Bell's Brewery",
         "brewery_location": "Kalamazoo, MI",
@@ -43,5 +48,6 @@ let exampleBeers = [
         "abv": 7,
     }
 ]
+
 
 module.exports = exampleBeers

@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Link } from 'react-router-dom'
 import BeerTriedList from '../../components/BeerTriedList/BeerTriedList'
-import FavoriteBeerType from '../../components/FavoriteBeerType/FavoriteBeerType'
+import CommonTastingNotes from '../../components/CommonTastingNotes/CommonTastingNotes'
 import FavoriteBrewery from '../../components/FavoriteBrewery/FavoriteBrewery'
 import AverageAbv from '../../components/AverageAbv/AverageAbv'
 import './TriedList.css'
@@ -39,11 +39,10 @@ export default class TriedList extends React.Component {
     
                     <h3 class="averageAbv">Average ABV of saved beers:</h3>
                         <AverageAbv />
-                    <h3 class="favoriteBeer">Favorite beer type:</h3>
-                        <FavoriteBeerType />
+                    <h3 class="commonTastingNotes">Common tasting notes:</h3>
+                        <CommonTastingNotes />
                     <h3 class="favoriteBrewery">Favorite brewery:</h3>
                         <FavoriteBrewery />
-                    
                 </section>
             </>
         )

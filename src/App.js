@@ -15,8 +15,8 @@ class App extends React.Component {
     return (
       <> 
         <head>
-{/*           <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
- */}        </head>
+          <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        </head>
         <body>
           <div className="app">
             <main className='App'>

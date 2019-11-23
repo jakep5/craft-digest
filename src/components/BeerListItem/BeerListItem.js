@@ -16,7 +16,9 @@ export default class BeerListItem extends Component {
                         <p className="beerAbv">ABV: {this.props.beerAbv}%</p>
                         <button class="removeBeer" onClick={() => {
                             value.deleteBeer(this.props.beerId)
-                        }}>Remove beer</button>
+                        }}>
+                            Remove beer
+                        </button>
                     </div>
                 )}
             </BeerConsumer>
