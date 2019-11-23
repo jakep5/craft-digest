@@ -1,5 +1,6 @@
 let exampleBeers = [
     {
+        "id"
         "name": "Spotted Cow",
         "brewery_name": "New Glarus Brewing Company",
         "brewery_location": "New Glarus, WI",

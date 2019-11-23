@@ -14,8 +14,9 @@ export class BeerProvider extends React.Component {
 
     handleAddBeer = (newBeer) => {
         this.setState({
-            beers: [...exampleBeers, newBeer]
+            beers: [...this.state.beers, newBeer]
         })
+        console.log(this.state.beers)
     }
 
 
