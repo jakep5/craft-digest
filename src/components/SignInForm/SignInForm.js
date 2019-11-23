@@ -11,13 +11,13 @@ export default class SignInForm extends React.Component {
                     <legend>Sign in</legend>
                     <br />
                     <label for="signInUsername">Username</label>
-                    <input type="text" id="signUpUsername" />
+                    <input type="text" id="signInUsername" />
                     <br />
                     <label for="signInPassword">Password</label>
                     <input type="password" id="signInPassword" />
                     <br />
                     <Link to="/triedList">
-                        <button type="submit" for="signInForm">Log in</button>
+                        <button type="submit" for="signInForm" id="logInButton">Log in</button>
                     </Link>
                 </form>
             </>

@@ -1,0 +1,21 @@
+input#signInUsername {
+    margin-left: 1%;
+}
+
+input#signInPassword {
+    margin-left: 1%;
+    margin-top: 1.5%;
+    position: relative;
+    left: 0px;
+}
+
+button#logInButton {
+    position: relative;
+    top: 10px;
+}
+
+@media only screen and (min-width: 500px) {
+    input#signInPassword {
+        left: 5px;
+    }
+}

@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+div.app {
+  display: block;
+  width: 100%;
+}
+
 body {
   font-family: "Open Sans",
   sans-serif; 
@@ -35,6 +40,11 @@ a#recommendBeer {
     margin-left: 2%;
 }
 
+a.expandList {
+  position: relative;
+  bottom: 5%;
+}
+
 header {
   padding: 2% 0;
 }
@@ -47,6 +57,7 @@ section {
 
 section#section1 {
     padding: 15% 0;
+    height: 75%;
 
 }
 
@@ -57,7 +68,7 @@ section:nth-child(even) {
 
 a.expandList {
     position: relative;
-    top: 900px;
+    top: 75px;
 }
 
 h1.triedList {
@@ -70,5 +81,11 @@ h1.synopsis {
 
 h3.beerList {
     margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 500px) {
+  a.expandList {
+    top: 40px;
+  }
 }
   
