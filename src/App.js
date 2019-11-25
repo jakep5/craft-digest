@@ -6,6 +6,7 @@ import SignInPage from './routes/SignInPage/SignInPage'
 import TriedList from './routes/TriedList/TriedList'
 import exampleBeers from './store'
 import AddToListPage from './routes/AddToListPage/AddToListPage';
+import RecommendBeerPage from './routes/RecommendBeerPage/RecommendBeerPage';
 
 class App extends React.Component {
 
@@ -45,6 +46,11 @@ class App extends React.Component {
                   exact
                   path={"/addBeer"}
                   component={AddToListPage}
+                />
+                <Route
+                  exact
+                  path={"/randomBeer"}
+                  component={RecommendBeerPage}
                 />
               </Switch>
             </main>

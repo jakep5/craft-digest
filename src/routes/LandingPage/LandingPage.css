@@ -48,10 +48,10 @@ h1 {
     font-size: 70px;
 }
 
-#signUp {
-    margin-right: 1%;
+a#signUpLink {
+    margin-right: 2%;
 }
 
-#signIn {
-    margin-right: 1%;
+a#signInLink {
+    margin-right: 2%;
 }

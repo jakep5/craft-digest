@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import RecommendedBeer from '../../components/RecommendedBeer/RecommendedBeer'
 import './RecommendBeerPage.css'
 
@@ -13,7 +14,13 @@ export default class RecommendBeerPage extends Component {
 
                     <section class="recommendBeerSection">
 
-                       <RecommendedBeer />
+{/*                        <RecommendedBeer />
+ */}                       <div className="comingSoon">
+                                <h2>Coming soon</h2>
+                                <Link to="/triedList">
+                                    <a>Return to list</a>
+                                </Link>
+                            </div>
 
                     </section>
                 </main>
