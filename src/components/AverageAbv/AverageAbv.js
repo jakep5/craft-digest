@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import './AverageAbv.css'
 import { BeerContext } from '../../contexts/BeerContext'
 import { BeerConsumer } from '../../contexts/BeerContext'

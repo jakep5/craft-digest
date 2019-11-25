@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import RecommendedBeer from '../../components/RecommendedBeer/RecommendedBeer'
-import './RecommendBeerPage.css'
+/* import RecommendedBeer from '../../components/RecommendedBeer/RecommendedBeer'
+ */import './RecommendBeerPage.css'
 
 export default class RecommendBeerPage extends Component {
     render() {

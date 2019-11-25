@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { BeerContext } from '../../contexts/BeerContext'
-import { BeerConsumer } from '../../contexts/BeerContext'
 import './CommonTastingNotes.css'
 
 export default class CommonTastingNotes extends Component {
@@ -15,8 +14,6 @@ export default class CommonTastingNotes extends Component {
             tastingNotesArray.push(beer.tasting_notes)
         })
 
-
-        let tastingNotesString = JSON.stringify(tastingNotesArray)
 
 /*         let tastingNotesArraySplit = tastingNotesArray.splice('')
  */

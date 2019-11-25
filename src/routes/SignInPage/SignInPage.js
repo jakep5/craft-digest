@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { Link } from 'react-router-dom'
 import './SignInPage.css'
 import SignInForm from '../../components/SignInForm/SignInForm'

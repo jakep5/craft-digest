@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './AddBeerForm.css'
-import { BeerConsumer } from '../../contexts/BeerContext'
 import { BeerContext } from '../../contexts/BeerContext'
 
 export default class AddBeerSearchForm extends Component {
