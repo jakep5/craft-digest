@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import { Link } from 'react-router-dom'
 import AddBeerForm from '../../components/AddBeerForm/AddBeerForm'
-import AddBeerSearchResults from '../../components/AddBeerSearchResults/AddBeerSearchResults'
-import exampleBeers from '../../store'
 import './AddToListPage.css'
 
 export default class AddToListPage extends Component {
@@ -28,7 +25,7 @@ export default class AddToListPage extends Component {
                         <AddBeerSearchResults handleSubmit={this.handleSubmit}/>
                     </div> */}
                 </section>
-                <footer role="returnToTop">
+                <footer role="button">
                     <Link to="/triedList">
                         <p>Return to tried list</p>
                     </Link>

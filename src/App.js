@@ -4,7 +4,6 @@ import { Route, Switch } from 'react-router-dom'
 import SignUpPage from './routes/SignUpPage/SignUpPage'
 import SignInPage from './routes/SignInPage/SignInPage'
 import TriedList from './routes/TriedList/TriedList'
-import exampleBeers from './store'
 import AddToListPage from './routes/AddToListPage/AddToListPage';
 import RecommendBeerPage from './routes/RecommendBeerPage/RecommendBeerPage';
 
