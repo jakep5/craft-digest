@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BeerConsumer } from '../../contexts/BeerContext'
+import StarRating from 'react-star-ratings'
 import './BeerListItem.css'
 
 export default class BeerListItem extends Component {
@@ -14,7 +15,13 @@ export default class BeerListItem extends Component {
                         <p className="beerBreweryLocation">Brewery location: {this.props.beerBreweryLocation}</p>
                         <p className="beerTastingNotes">Tasting notes: {this.props.beerTastingNotes}</p>
                         <p className="beerAbv">ABV: {this.props.beerAbv}%</p>
-                        <button class="removeBeer" onClick={() => {
+                        <StarRating 
+                            rating={this.props.beerRating}
+                            starDimension="25px"
+                            starSpacing="5px"
+                            name="rating"
+                        /> <p className="beerRating">{`(${this.props.beerRating})`}</p>
+                        <button className="removeBeer" onClick={() => {
                             value.deleteBeer(this.props.beerId)
                         }}>
                             Remove beer

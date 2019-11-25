@@ -13,13 +13,15 @@ export default class AddBeerSearchForm extends Component {
         const beerBreweryLocation = document.getElementById('beerBreweryLocation').value
         const beerTastingNotes = document.getElementById('beerTastingNotes').value
         const beerAbv = document.getElementById('beerAbv').value
+        const beerRating = parseFloat(document.getElementById('beerRating').value)
 
         const newItem = { 
             "name": beerName,
             "brewery": beerBrewery,
             "brewery_location": beerBreweryLocation,
             "tasting_notes":beerTastingNotes,
-            "abv": parseInt(beerAbv)
+            "abv": parseInt(beerAbv),
+            "rating": beerRating
         }
 
         this.context.handleAddBeer(newItem)
@@ -46,8 +48,12 @@ export default class AddBeerSearchForm extends Component {
                                 <label for="beerAbv" required>ABV:</label>
                                 <input type="number" class="abvInput" id="beerAbv" step=".01"/>
 
+                                <label for="beerRating" required>Rating (out of 5):</label>
+                                <input type="number" class="ratingInput" id="beerRating" step=".01"/>
+
                                 <label for="submitButton" required>{null}</label>
                                 <input type="submit" value="Add beer" id="submitButton" />
+
                                
                         </form>
                     </div>

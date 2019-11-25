@@ -6,6 +6,7 @@ let exampleBeers = [
         "brewery_location": "New Glarus, WI",
         "tasting_notes": "Wheat, apple, malt",
         "abv": 5,
+        "rating": 4.5
     },
     {
         "id": 2,
@@ -14,6 +15,8 @@ let exampleBeers = [
         "brewery_location": "Milwaukee, WI",
         "tasting_notes": "Corn, malt",
         "abv": 4.2,
+        "rating": 3.5
+        
     },
     {
         "id": 3,
@@ -22,6 +25,7 @@ let exampleBeers = [
         "brewery_location": "Munich, Germany",
         "tasting_notes": "Chocolate, coffee, heavy malt",
         "abv": 7,
+        "rating": 4
     },
     {
         "id": 4,
@@ -30,6 +34,7 @@ let exampleBeers = [
         "brewery_location": "Fort Collins, CO",
         "tasting_notes": "Bitter, citrus, hops",
         "abv": 6,
+        "rating": 4.75
     },
     {
         "id": 5,
@@ -38,6 +43,7 @@ let exampleBeers = [
         "brewery_location": "Fort Collins, CO",
         "tasting_notes": "Wheat, malt, roses",
         "abv": 5,
+        "rating": 3.25
     },
     {
         "id": 6,
@@ -46,6 +52,7 @@ let exampleBeers = [
         "brewery_location": "Kalamazoo, MI",
         "tasting_notes": "Malt, bitter, heavy taste",
         "abv": 7,
+        "rating": 3
     }
 ]
 

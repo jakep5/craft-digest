@@ -1,7 +1,14 @@
 div.beerListItemHolder {
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 
 button.removeBeer {
     padding: 5px 8px;
+    display: block;
+    margin-left: calc(50% - 50px);
+}
+
+p.beerRating {
+    display: inline;
+    font-size: 12px;
 }
