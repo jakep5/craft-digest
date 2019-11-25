@@ -8,11 +8,11 @@ export default class SignInPage extends React.Component {
         return (
             <>
                 <nav role="navigation">
-                    <Link to="/">
+                    <Link to="/" style={{ textDecoration: 'none' }}>
                         <p id="returnToHome">Return to homepage</p>
                     </Link>
 
-                    <Link to="/signUp">
+                    <Link to="/signUp" style={{ textDecoration: 'none' }}>
                         <p id="signInLink">Sign up</p>
                     </Link>
                 </nav>

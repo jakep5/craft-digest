@@ -15,7 +15,7 @@ export default class SignInForm extends React.Component {
                     <label for="signInPassword">Password</label>
                     <input type="password" id="signInPassword" />
                     <br />
-                    <Link to="/triedList">
+                    <Link to="/triedList" style={{ textDecoration: 'none' }}>
                         <button type="submit" for="signInForm" id="logInButton">Log in</button>
                     </Link>
                 </form>

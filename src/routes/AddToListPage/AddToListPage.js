@@ -10,7 +10,7 @@ export default class AddToListPage extends Component {
         return (
             <div>
                 <nav role="navigation">
-                    <Link to="/">
+                    <Link to="/" style={{ textDecoration: 'none' }}>
                         <p class="logOut">Log out</p>
                     </Link>
                 </nav>
@@ -26,7 +26,7 @@ export default class AddToListPage extends Component {
                     </div> */}
                 </section>
                 <footer role="button">
-                    <Link to="/triedList">
+                    <Link to="/triedList" style={{ textDecoration: 'none' }}>
                         <p>Return to tried list</p>
                     </Link>
                 </footer>

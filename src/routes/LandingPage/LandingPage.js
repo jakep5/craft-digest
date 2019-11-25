@@ -31,11 +31,11 @@ export default class LandingPage extends React.Component {
                     <h3>Use our search function to scope out beers you would like to try, and preemptively add them to your list!</h3>
                 </section>
                 <section class="signUp">
-                    <Link to="/signUp">
+                    <Link to="/signUp" style={{ textDecoration: 'none' }}>
                         <p id="signUpLinkLanding">Sign up</p>
                     </Link>
                     
-                    <Link to="signIn">
+                    <Link to="signIn" style={{ textDecoration: 'none' }}>
                         <p id="signInLinkLanding">Sign in</p>
                     </Link>
                 </section>

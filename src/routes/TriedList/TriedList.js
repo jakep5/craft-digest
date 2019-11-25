@@ -14,16 +14,16 @@ export default class TriedList extends React.Component {
         return (
             <>
                 <nav role="navigation">
-                    <Link to="/randomBeer">
+                    <Link to="/randomBeer" style={{ textDecoration: 'none' }}>
                         <p id="recommendBeer">Recommend me a beer!</p>
                     </Link>
-                    <Link to="/">
+                    <Link to="/" style={{ textDecoration: 'none' }}>
                         <p id="logOutLink">Log out</p>
                     </Link>
                 </nav>
                 <header role="banner">
                     <h1 class="triedList">Tried List</h1>
-                    <Link to="/addBeer">
+                    <Link to="/addBeer" style={{ textDecoration: 'none' }}>
                         <button id="addToTried"> + Add to list</button>
                     </Link>
                 </header>

@@ -17,7 +17,7 @@ export default class RecommendBeerPage extends Component {
 {/*                        <RecommendedBeer />
  */}                       <div className="comingSoon">
                                 <h2>Coming soon</h2>
-                                <Link to="/triedList">
+                                <Link to="/triedList" style={{ textDecoration: 'none' }}>
                                     <p>Return to list</p>
                                 </Link>
                             </div>
