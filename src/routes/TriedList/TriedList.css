@@ -31,13 +31,16 @@ nav {
   text-align: right;
 }
 
-a#logOutLink {
+p#logOutLink {
+    display: inline-block;
     margin-right: 2%;
+    margin-top: 0%;
 }
 
-a#recommendBeer {
+p#recommendBeer {
     float: left;
     margin-left: 2%;
+    margin-top: 0%;
 }
 
 a.expandList {
@@ -84,7 +87,7 @@ h3.beerList {
 }
 
 @media only screen and (max-width: 500px) {
-  a.expandList {
+  p.expandList {
     top: 40px;
   }
 }

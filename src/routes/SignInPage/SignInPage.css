@@ -16,9 +16,11 @@ form {
   position: relative;
   left: 0%;
 }
-#returnToHome {
+
+p#returnToHome {
     float: left;
     margin-left: 2%;
+    margin-top: 0%;
 }
 
 button {
@@ -26,6 +28,8 @@ button {
   padding: 10px 20px;
 }
 
-#signInLink {
+p#signInLink {
+    display: inline-block;
     margin-right: 1%;
+    margin-top: -1%;
 }

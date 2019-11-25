@@ -26,8 +26,11 @@ nav {
   text-align: right;
 }
 
-a.logOut {
+p.logOut {
+    display: inline-block;
     margin-right: 2%;
+    margin-top: -1%;
+    position: relative;
 }
 
 header {

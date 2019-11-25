@@ -32,11 +32,11 @@ export default class LandingPage extends React.Component {
                 </section>
                 <section class="signUp">
                     <Link to="/signUp">
-                        <a id="signUpLink">Sign up</a>
+                        <p id="signUpLinkLanding">Sign up</p>
                     </Link>
                     
                     <Link to="signIn">
-                        <a id="signInLink">Sign in</a>
+                        <p id="signInLinkLanding">Sign in</p>
                     </Link>
                 </section>
             </>

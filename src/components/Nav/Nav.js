@@ -7,10 +7,10 @@ export default class Nav extends React.Component {
         return (
             <nav role="navigation">
                 <Link to="/signUp">
-                    <a id="signUp">Sign up</a>
+                    <p id="signUp">Sign up</p>
                 </Link>
                 <Link to="/signin">
-                    <a id="signIn">Sign in</a>
+                    <p id="signIn">Sign in</p>
                 </Link>
             </nav>
         )

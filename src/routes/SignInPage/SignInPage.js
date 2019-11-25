@@ -10,11 +10,11 @@ export default class SignInPage extends React.Component {
             <>
                 <nav role="navigation">
                     <Link to="/">
-                        <a id="returnToHome">Return to homepage</a>
+                        <p id="returnToHome">Return to homepage</p>
                     </Link>
 
                     <Link to="/signUp">
-                        <a id="signInLink">Sign up</a>
+                        <p id="signInLink">Sign up</p>
                     </Link>
                 </nav>
                 <header role="banner">

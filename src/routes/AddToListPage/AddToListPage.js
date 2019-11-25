@@ -14,7 +14,7 @@ export default class AddToListPage extends Component {
             <div>
                 <nav role="navigation">
                     <Link to="/">
-                        <a class="logOut">Log out</a>
+                        <p class="logOut">Log out</p>
                     </Link>
                 </nav>
                 <header role="banner">
@@ -30,7 +30,7 @@ export default class AddToListPage extends Component {
                 </section>
                 <footer role="returnToTop">
                     <Link to="/triedList">
-                        <a>Return to tried list</a>
+                        <p>Return to tried list</p>
                     </Link>
                 </footer>
             </div>

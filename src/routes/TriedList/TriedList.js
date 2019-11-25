@@ -16,10 +16,10 @@ export default class TriedList extends React.Component {
             <>
                 <nav role="navigation">
                     <Link to="/randomBeer">
-                        <a id="recommendBeer">Recommend me a beer!</a>
+                        <p id="recommendBeer">Recommend me a beer!</p>
                     </Link>
                     <Link to="/">
-                        <a id="logOutLink">Log out</a>
+                        <p id="logOutLink">Log out</p>
                     </Link>
                 </nav>
                 <header role="banner">
@@ -31,7 +31,7 @@ export default class TriedList extends React.Component {
 
                 <section id="section1">
                     <BeerTriedList triedBeers={this.props.triedBeers}/>
-                    <a class="expandList">Click to see expanded list</a>
+                    <p class="expandList">Click to see expanded list</p>
                 </section>
 
                 <section>
