@@ -18,7 +18,7 @@ export default class RecommendBeerPage extends Component {
  */}                       <div className="comingSoon">
                                 <h2>Coming soon</h2>
                                 <Link to="/triedList">
-                                    <a>Return to list</a>
+                                    <p>Return to list</p>
                                 </Link>
                             </div>
 
