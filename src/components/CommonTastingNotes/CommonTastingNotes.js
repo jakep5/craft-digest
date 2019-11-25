@@ -15,12 +15,16 @@ export default class CommonTastingNotes extends Component {
             tastingNotesArray.push(beer.tasting_notes)
         })
 
-        let tastingNotesArraySplit = tastingNotesArray.splice('')
 
-        console.log(tastingNotesArraySplit)
+        let tastingNotesString = JSON.stringify(tastingNotesArray)
+
+/*         let tastingNotesArraySplit = tastingNotesArray.splice('')
+ */
+        console.log(tastingNotesArray)
 
         return (
             <div id="word-cloud">
+                Coming soon
             </div>
         )
     }
