@@ -39,10 +39,10 @@ export default class TriedList extends React.Component {
     
                     <h3 class="averageAbv">Average ABV of saved beers:</h3>
                         <AverageAbv />
-                    <h3 class="commonTastingNotes">Common tasting notes:</h3>
-                        <CommonTastingNotes />
                     <h3 class="favoriteBrewery">Favorite brewery:</h3>
                         <FavoriteBrewery />
+                    <h3 class="commonTastingNotes">Common tasting notes:</h3>
+                        <CommonTastingNotes />
                 </section>
             </>
         )
