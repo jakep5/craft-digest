@@ -14,15 +14,14 @@ export default class BeerTriedList extends React.Component {
 
 
     componentDidMount = () => {
-        const token = sessionStorage.getItem('craft-digest-token-key')
-        let payload = this.parseJwt(token)
+        let payload = this.parseJwt()
         let userId = payload.user_id
-        console.log(userId)
-/*         BeerApiServiceObject.getBeers(userId)
- */
-    }
+        BeerApiServiceObject.getBeers(userId)
+}
 
-    parseJwt = (token) => {
+    parseJwt = () => {
+        const token = sessionStorage.getItem('craft-digest-token-key')
+        console.log(token)
         let base64Url = token.split('.')[1];
         let base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
         let jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
