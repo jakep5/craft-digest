@@ -18,6 +18,10 @@ export default class SignInForm extends React.Component {
 
         TokenServiceObject.saveAuthToken(token)
 
+        user_name = '';
+        password = '';
+        this.props.onLogInSuccess()
+
     }
 
     render() {

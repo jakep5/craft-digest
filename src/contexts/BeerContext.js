@@ -27,13 +27,20 @@ export class BeerProvider extends React.Component {
         })
     }
 
+    handleLogIn = () => {
+        this.setState({
+            mustLogIn: false
+        })
+    }
+
 
     render() {
 
         const contextValue = {
             beers: this.state.beers,
             handleAddBeer: this.handleAddBeer,
-            deleteBeer: this.deleteBeer
+            deleteBeer: this.deleteBeer,
+            handleLogIn: this.handleLogIn
         }
 
         return (
