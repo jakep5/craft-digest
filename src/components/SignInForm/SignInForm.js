@@ -16,23 +16,24 @@ export default class SignInForm extends React.Component {
 
     handleSubmitAuthentication = e => {
         e.preventDefault();
+
         this.setState({
             error: null
         });
         
-        let user_name = document.getElementById('signInUsername').value;
-        let password = document.getElementById('signInPassword').value;
+        const { user_name, password } = e.target
+
 
         AuthApiServiceObject.logIn({
-            user_name: user_name,
-            password: password
+            user_name: user_name.value,
+            password: password.value
         })
             .then(res => {
                 user_name = ''
                 password = ''
                 TokenServiceObject.saveAuthToken(res.authToken)
-                this.props.onLoginSuccess()
-            })
+/*                 this.props.onLoginSuccess()
+ */            })
             .catch(res => {
                 this.setState({
                     error: res.error
@@ -46,21 +47,22 @@ export default class SignInForm extends React.Component {
 
         return (
             <>
-                <form id="signInForm" onSubmit={(e) => this.handleSubmitAuthentication(e)}>
+                <form 
+                    id="signInForm" 
+                    onSubmit={(e) => this.handleSubmitAuthentication(e)}
+                >
                     <div role='alert'>
                       {error && <p className='red'>{error}</p>}
                     </div>
                     <legend>Sign in</legend>
                     <br />
-                    <label for="signInUsername">Username</label>
-                    <input type="text" id="signInUsername" />
+                    <label htmlFor="signInUsername">Username</label>
+                    <input type="text" id="signInUsername" name='user_name' />
                     <br />
-                    <label for="signInPassword">Password</label>
-                    <input type="password" id="signInPassword" />
+                    <label htmlFor="signInPassword">Password</label>
+                    <input type="password" id="signInPassword" name='password'/>
                     <br />
-                    <Link to="/triedList" style={{ textDecoration: 'none' }}>
-                        <button type="submit" for="signInForm" id="logInButton">Log in</button>
-                    </Link>
+                    <button type="submit" htmlFor="signInForm" id="logInButton">Log in</button>
                 </form>
             </>
         )

@@ -14,6 +14,7 @@ export class BeerProvider extends React.Component {
     }
 
     handleAddBeer = (newBeer) => {
+        BeerApiServiceObject.postBeer(newBeer)
         this.setState({
             beers: [...this.state.beers, newBeer]
         })
@@ -34,7 +35,7 @@ export class BeerProvider extends React.Component {
         })
     }
 
-    componentDidMount = (userId) => {
+    getBeers = (userId) => {
         BeerApiServiceObject.getBeers(userId)
             .then(beers => this.setNewBeers(beers))
     }

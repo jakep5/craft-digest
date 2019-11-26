@@ -12,10 +12,10 @@ export default class BeerTriedList extends React.Component {
     static contextType = BeerContext;
 
 
-    componentWillMount = () => {
-        const userId = AuthApiServiceObject.getUserId()
+    /* componentWillMount = () => {
+        const userId = //??????????????????????????
         this.context.getBeers(userId)
-    }
+    } */
 
     render() {
 

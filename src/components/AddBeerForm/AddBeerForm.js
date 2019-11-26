@@ -22,7 +22,8 @@ class AddBeerForm extends Component {
             "brewery_location": beerBreweryLocation,
             "tasting_notes":beerTastingNotes,
             "abv": parseInt(beerAbv),
-            "rating": beerRating
+            "rating": beerRating,
+            /* "user_id": */ //??????????????
         }
 
         this.context.handleAddBeer(newItem)

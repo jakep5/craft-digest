@@ -13,13 +13,20 @@ export default class AverageAbv extends Component {
 
         let averageAbv = []
 
+        let avgFixed
+
         this.context.beers.map(beer =>
             averageAbv.push(beer.abv)    
         )
-
-        let sum = averageAbv.reduce((previous, current) => current += previous);
-        let avg = sum / averageAbv.length;
-        let avgFixed = avg.toFixed(2)
+        
+        if (this.context.beers.length >= 1) {
+            let sum = averageAbv.reduce((previous, current) => current += previous);
+            let avg = sum / averageAbv.length;
+            let avgFixed = avg.toFixed(2)
+            return avgFixed
+        } else {
+            avgFixed = 'You do not have any beers added yet'
+        }
         
         return (
             <BeerConsumer>

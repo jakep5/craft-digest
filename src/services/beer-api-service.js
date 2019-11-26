@@ -20,7 +20,7 @@ const BeerApiServiceObject = {
             method: 'POST',
             headers: {
                 "content-type": "application/json",
-                "Authorization": `bearer ${TokenService.getAuthToken()}`
+                "Authorization": `bearer ${TokenServiceObject.getAuthToken()}`
             },
             body: JSON.stringify({
                 id: beer.id,
