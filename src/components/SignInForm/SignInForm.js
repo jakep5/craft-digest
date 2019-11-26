@@ -52,7 +52,7 @@ export default class SignInForm extends React.Component {
                     onSubmit={(e) => this.handleSubmitAuthentication(e)}
                 >
                     <div role='alert'>
-                      {error && <p className='red'>{error}</p>}
+                      {error && <p className='error'>{error}</p>}
                     </div>
                     <legend>Sign in</legend>
                     <br />
