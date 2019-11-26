@@ -15,18 +15,18 @@ export default class SignUpForm extends React.Component {
 
     handleRegistrationSubmit = (e) => {
         e.preventDefault()
-        let user_name = document.getElementById('signUpUsername').value
-        let password = document.getElementById('signUpPassword').value
+        
+        let { user_name, password } = e.target
 
         this.setState({
             error: null
         })
 
         AuthApiServiceObject.registerUser({
-            user_name: user_name,
-            password: password
+            user_name: user_name.value,
+            password: password.value
         })
-            .then(user => {
+            .then(res => {
                 user_name  = ''
                 password = ''
                 this.props.onRegistrationSuccess()
@@ -48,15 +48,13 @@ export default class SignUpForm extends React.Component {
                     </div>
                     <legend>Sign up</legend>
                     <br />
-                    <label for="signUpUsername">Username</label>
-                    <input type="text" id="signUpUsername" />
+                    <label htmlFor="signUpUsername">Username</label>
+                    <input type="text" id="signUpUsername" name='user_name'/>
                     <br />
-                    <label for="signUpPassword">Password</label>
-                    <input type="password" id="signUpPassword" />
+                    <label htmlFor="signUpPassword">Password</label>
+                    <input type="password" id="signUpPassword" name='password'/>
                     <br />
-                    <Link to="/triedList" style={{ textDecoration: 'none' }}>
-                        <button type="submit" for="signUpForm" id="signUpButton">Submit</button>
-                    </Link>
+                    <button type="submit" htmlFor="signUpForm" id="signUpButton">Submit</button>
                 </form>
             </>
         )
