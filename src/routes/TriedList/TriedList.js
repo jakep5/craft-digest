@@ -6,9 +6,12 @@ import FavoriteBrewery from '../../components/FavoriteBrewery/FavoriteBrewery'
 import AverageAbv from '../../components/AverageAbv/AverageAbv'
 import NumberOfBeersAdded from '../../components/NumberOfBeersAdded/NumberOfBeersAdded'
 import './TriedList.css'
+import TokenServiceObject from '../../services/token-service'
 
 export default class TriedList extends React.Component {
-
+    handleLogoutClick = () => {
+        TokenServiceObject.clearAuthToken()
+    }
 
     render () {
 
@@ -18,7 +21,11 @@ export default class TriedList extends React.Component {
                     <Link to="/randomBeer" style={{ textDecoration: 'none' }}>
                         <p id="recommendBeer">Recommend me a beer!</p>
                     </Link>
-                    <Link to="/" style={{ textDecoration: 'none' }}>
+                    <Link 
+                        to="/" 
+                        style={{ textDecoration: 'none' }}
+                        onClick={this.handleLogoutClick}
+                    >
                         <p id="logOutLink">Log out</p>
                     </Link>
                 </nav>

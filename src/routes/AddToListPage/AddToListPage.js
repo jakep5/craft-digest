@@ -2,15 +2,22 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import AddBeerForm from '../../components/AddBeerForm/AddBeerForm'
 import './AddToListPage.css'
+import TokenServiceObject from '../../services/token-service'
 
 export default class AddToListPage extends Component {
 
+    handleLogoutClick = () => {
+        TokenServiceObject.clearAuthToken()
+    }
 
     render() {
         return (
             <div>
                 <nav role="navigation">
-                    <Link to="/" style={{ textDecoration: 'none' }}>
+                    <Link to="/" 
+                        style={{ textDecoration: 'none' }}
+                        onClick={this.handleLogoutClick}
+                    >
                         <p class="logOut">Log out</p>
                     </Link>
                 </nav>
