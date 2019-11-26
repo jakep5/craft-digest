@@ -26,12 +26,26 @@ export default class SignUpForm extends React.Component {
             user_name: user_name,
             password: password
         })
+            .then(user => {
+                user_name  = ''
+                password = ''
+                this.props.onRegistrationSuccess()
+            })
+            .catch(res => {
+                this.setState({
+                    error: res.error
+                })
+            })
     }
 
     render() {
+        const { error } = this.state
         return (
             <>
                 <form id="signUpForm" onSubmit={(e) => this.handleRegistrationSubmit(e)}>
+                    <div role='alert'>
+                      {error && <p className='red'>{error}</p>}
+                    </div>
                     <legend>Sign up</legend>
                     <br />
                     <label for="signUpUsername">Username</label>

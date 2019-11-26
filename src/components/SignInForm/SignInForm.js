@@ -41,9 +41,15 @@ export default class SignInForm extends React.Component {
     }
 
     render() {
+
+        const { error } = this.state
+
         return (
             <>
                 <form id="signInForm" onSubmit={(e) => this.handleSubmitAuthentication(e)}>
+                    <div role='alert'>
+                      {error && <p className='red'>{error}</p>}
+                    </div>
                     <legend>Sign in</legend>
                     <br />
                     <label for="signInUsername">Username</label>
