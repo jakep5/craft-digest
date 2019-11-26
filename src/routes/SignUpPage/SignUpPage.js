@@ -4,6 +4,18 @@ import './SignUpPage.css'
 import SignUpForm  from '../../components/SignUpForm/SignUpForm'
 
 export default class SignUpPage extends React.Component {
+
+    static defaultProps = {
+        history: {
+            push: () => {}
+        },
+    }
+
+    handleRegistrationSuccess = user => {
+        const { history } = this.props
+        history.push('/signIn')
+    }
+
     render() {
         return (
             <>
@@ -18,7 +30,7 @@ export default class SignUpPage extends React.Component {
                 <header role="banner">
                     <h1>Sign up for Craft Digest!</h1>
 
-                    <SignUpForm />
+                    <SignUpForm onRegistration={this.handleRegistrationSuccess}/>
 
                 </header>
             </>
