@@ -19,7 +19,7 @@ export default class AddToListPage extends Component {
                 </header>
                 <section className="addBeerSection">
                     <div className="addBeerSearchFormHolder">
-                        <AddBeerForm handleSubmit={(newItem) => this.handleSubmit(newItem)}/>
+                        <AddBeerForm />
                     </div>
                     {/* <div className="AddBeerSearchResultsHolder">
                         <AddBeerSearchResults handleSubmit={this.handleSubmit}/>

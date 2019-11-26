@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import './AddBeerForm.css'
 import { BeerContext } from '../../contexts/BeerContext'
+import {withRouter} from 'react-router-dom'
 
-export default class AddBeerSearchForm extends Component {
+class AddBeerForm extends Component {
 
     static contextType = BeerContext;
 
@@ -25,6 +26,7 @@ export default class AddBeerSearchForm extends Component {
         }
 
         this.context.handleAddBeer(newItem)
+        this.props.history.push('/triedList');
     }
 
     render() {
@@ -53,10 +55,11 @@ export default class AddBeerSearchForm extends Component {
 
                                 <label for="submitButton" required>{null}</label>
                                 <input type="submit" value="Add beer" id="submitButton" />
-
-                               
+     
                         </form>
                     </div>
         )
     }
 }
+
+export default withRouter(AddBeerForm);

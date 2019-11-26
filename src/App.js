@@ -7,8 +7,8 @@ import TriedList from './routes/TriedList/TriedList'
 import AddToListPage from './routes/AddToListPage/AddToListPage';
 import RecommendBeerPage from './routes/RecommendBeerPage/RecommendBeerPage';
 
-class App extends React.Component {
 
+class App extends React.Component {
 
   render() {
 
