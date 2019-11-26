@@ -15,8 +15,8 @@ export default class SignUpForm extends React.Component {
 
     handleRegistrationSubmit = (e) => {
         e.preventDefault()
-        const user_name = document.getElementById('signUpUsername').value
-        const password = document.getElementById('signUpPassword').value
+        let user_name = document.getElementById('signUpUsername').value
+        let password = document.getElementById('signUpPassword').value
 
         this.setState({
             error: null

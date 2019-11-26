@@ -20,8 +20,8 @@ export default class SignInForm extends React.Component {
             error: null
         });
         
-        const user_name = document.getElementById('signInUsername').value;
-        const password = document.getElementById('signInPassword').value;
+        let user_name = document.getElementById('signInUsername').value;
+        let password = document.getElementById('signInPassword').value;
 
         AuthApiServiceObject.logIn({
             user_name: user_name,
