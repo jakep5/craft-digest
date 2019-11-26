@@ -18,7 +18,6 @@ export class BeerProvider extends React.Component {
         this.setState({
             beers: [...this.state.beers, newBeer]
         })
-        console.log(this.state.beers)
     }
 
     deleteBeer = (beerId) => {

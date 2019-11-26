@@ -34,7 +34,6 @@ export default class SignInForm extends React.Component {
             .then(user_name = '')
             .then(password = '')
             .then(this.props.onLoginSuccess())
-            .then(console.log('here'))
             .catch(res => {
                 this.setState({
                     error: res.error
