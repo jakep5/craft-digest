@@ -21,7 +21,7 @@ export default class SignInForm extends React.Component {
             error: null
         });
         
-        const { user_name, password } = e.target
+        let { user_name, password } = e.target
 
 
         AuthApiServiceObject.logIn({
@@ -29,11 +29,12 @@ export default class SignInForm extends React.Component {
             password: password.value
         })
             .then(res => {
-                user_name = ''
-                password = ''
                 TokenServiceObject.saveAuthToken(res.authToken)
-/*                 this.props.onLoginSuccess()
- */            })
+             })
+            .then(user_name = '')
+            .then(password = '')
+            .then(this.props.onLoginSuccess())
+            .then(console.log('here'))
             .catch(res => {
                 this.setState({
                     error: res.error
@@ -52,7 +53,7 @@ export default class SignInForm extends React.Component {
                     onSubmit={(e) => this.handleSubmitAuthentication(e)}
                 >
                     <div role='alert'>
-                      {error && <p className='error'>{error}</p>}
+                      {error && <p className='red'>{error}</p>}
                     </div>
                     <legend>Sign in</legend>
                     <br />

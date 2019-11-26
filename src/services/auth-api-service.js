@@ -2,7 +2,6 @@ import config from '../config'
 
 const AuthApiServiceObject = {
     logIn(credentials) {
-        console.log(JSON.stringify(credentials))
         return fetch(`${config.API_BASE_URL}/auth/login`, {
             method: "POST",
             headers: {
