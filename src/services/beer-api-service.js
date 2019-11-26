@@ -3,11 +3,16 @@ import TokenServiceObject from './token-service'
 
 const BeerApiServiceObject = {
     getBeers(userId) {
-        return fetch(`${config.API_BASE_URL}/beers/${user_id}`, {
+        return fetch(`${config.API_BASE_URL}/beers/${userId}`, {
             headers: {
                 'Authorization': `bearer ${TokenServiceObject.getAuthToken()}`
             }
         })
+            .then(res => 
+                (!res.ok)
+                    ? res.json().then(e => Promise.reject(e))
+                    : res.json()
+            )
     },
 
     postBeer(beer) {

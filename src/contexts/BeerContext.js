@@ -1,5 +1,6 @@
 import React from 'react'
 import exampleBeers from '../store'
+import BeerApiServiceObject from '../services/beer-api-service'
 
 export const BeerContext = React.createContext();
 
@@ -8,7 +9,7 @@ export class BeerProvider extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            beers: exampleBeers
+            beers: []
         }
     }
 
@@ -33,14 +34,25 @@ export class BeerProvider extends React.Component {
         })
     }
 
+    componentDidMount = (userId) => {
+        BeerApiServiceObject.getBeers(userId)
+            .then(beers => this.setNewBeers(beers))
+    }
 
+    setNewBeers = (beers) => {
+        this.setState({
+            beers
+        })
+    }
+    
     render() {
 
         const contextValue = {
             beers: this.state.beers,
             handleAddBeer: this.handleAddBeer,
             deleteBeer: this.deleteBeer,
-            handleLogIn: this.handleLogIn
+            handleLogIn: this.handleLogIn,
+            getBeers: this.getBeers
         }
 
         return (
