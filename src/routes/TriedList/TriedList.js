@@ -4,6 +4,7 @@ import BeerTriedList from '../../components/BeerTriedList/BeerTriedList'
 import CommonTastingNotes from '../../components/CommonTastingNotes/CommonTastingNotes'
 import FavoriteBrewery from '../../components/FavoriteBrewery/FavoriteBrewery'
 import AverageAbv from '../../components/AverageAbv/AverageAbv'
+import NumberOfBeersAdded from '../../components/NumberOfBeersAdded/NumberOfBeersAdded'
 import './TriedList.css'
 
 export default class TriedList extends React.Component {
@@ -22,7 +23,7 @@ export default class TriedList extends React.Component {
                     </Link>
                 </nav>
                 <header role="banner">
-                    <h1 class="triedList">Tried List</h1>
+                    <h1 className="triedList">Tried List</h1>
                     <Link to="/addBeer" style={{ textDecoration: 'none' }}>
                         <button id="addToTried"> + Add to list</button>
                     </Link>
@@ -30,17 +31,19 @@ export default class TriedList extends React.Component {
 
                 <section id="section1">
                     <BeerTriedList triedBeers={this.props.triedBeers}/>
-                    <p class="expandList">Click to see expanded list</p>
+                    <p className="expandList">Click to see expanded list</p>
                 </section>
 
                 <section>
-                    <h1 class="synopsis">Your beer synopsis:</h1>
+                    <h1 className="synopsis">Your beer synopsis:</h1>
     
-                    <h3 class="averageAbv">Average ABV of saved beers:</h3>
+                    <h3 className="averageAbv">Average ABV of saved beers:</h3>
                         <AverageAbv />
-                    <h3 class="favoriteBrewery">Favorite brewery:</h3>
+                    <h3 className="favoriteBrewery">Favorite brewery:</h3>
                         <FavoriteBrewery />
-                    <h3 class="commonTastingNotes">Common tasting notes:</h3>
+                    <h3 className="numberOfBeers">Number of beers tried:</h3>
+                        <NumberOfBeersAdded />
+                    <h3 className="commonTastingNotes">Common tasting notes:</h3>
                         <CommonTastingNotes />
                 </section>
             </>
