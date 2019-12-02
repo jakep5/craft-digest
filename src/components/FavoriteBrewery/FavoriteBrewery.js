@@ -6,6 +6,18 @@ export default class FavoriteBrewery extends Component {
 
     static contextType = BeerContext;
 
+    hasDuplicates = (breweryArray) => {
+        var valuesSoFar = Object.create(null);
+        for (var i = 0; i < breweryArray.length; ++i) {
+            var value = breweryArray[i];
+            if (value in valuesSoFar) {
+                return true;
+            }
+            valuesSoFar[value] = true;
+        }
+        return false;
+    }
+
     render() {
 
         let breweryArray = [];
@@ -16,7 +28,7 @@ export default class FavoriteBrewery extends Component {
             breweryArray.push(beer.brewery_name)
         })
 
-        if (breweryArray.length >= 2) {
+        if (this.hasDuplicates(breweryArray)) {
             function mode(breweryArray) {
                 return breweryArray.sort((a, b) => 
                     breweryArray.filter(v => v===a).length
@@ -28,8 +40,11 @@ export default class FavoriteBrewery extends Component {
 
             return mostFrequent
         } else {
-            mostFrequent = 'You must have at least 2 beers added to see favorite brewery'
+
+            mostFrequent = 'You must have at least 2 beers from the same brewery to have a favorite brewery'
         }
+
+        
         
 
         return (
