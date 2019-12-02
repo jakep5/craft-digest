@@ -25,14 +25,18 @@ export class BeerProvider extends React.Component {
         this.setState({
             userId: userId
         })
+        this.getBeers(userId)
     }
 
     deleteBeer = (beerId) => {
         const afterDeleteBeers = this.state.beers.filter(br =>
-            br.id !==beerId)
+            br.id !== beerId)
+        console.log(beerId)
         this.setState({
             beers: afterDeleteBeers
         })
+        BeerApiServiceObject.deleteBeer(beerId)
+
     }
 
 
@@ -62,7 +66,8 @@ export class BeerProvider extends React.Component {
             handleLogIn: this.handleLogIn,
             getBeers: this.getBeers,
             userId: this.state.userId,
-            setUserId: this.setUserId
+            setUserId: this.setUserId,
+            setNewBeers: this.setNewBeers
         }
 
         return (

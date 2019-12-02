@@ -16,7 +16,7 @@ export default class BeerListItem extends Component {
                         <p className="beerTastingNotes">Tasting notes: {this.props.beerTastingNotes}</p>
                         <p className="beerAbv">ABV: {this.props.beerAbv}%</p>
                         <StarRating 
-                            rating={this.props.beerRating}
+                            rating={parseFloat(this.props.beerRating)}
                             starDimension="25px"
                             starSpacing="5px"
                             name="rating"

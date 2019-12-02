@@ -44,7 +44,8 @@ const BeerApiServiceObject = {
         return fetch(`${config.API_BASE_URL}/beers/${beerId}`, {
             method: 'DELETE',
             headers: {
-                'content-type': 'application/json'
+                "content-type": "application/json",
+                "Authorization": `bearer ${TokenServiceObject.getAuthToken()}`
             }
         })
             .then(response => {

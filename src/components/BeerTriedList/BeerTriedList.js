@@ -4,6 +4,7 @@ import { BeerConsumer } from '../../contexts/BeerContext'
 import { BeerContext } from '../../contexts/BeerContext'
 import './BeerTriedList.css'
 import AuthApiServiceObject from '../../services/auth-api-service'
+import config from '../../config'
 import BeerApiServiceObject from '../../services/beer-api-service'
 
 
@@ -17,8 +18,19 @@ export default class BeerTriedList extends React.Component {
         let payload = this.parseJwt(token)
         let userId = payload.user_id
         this.context.setUserId(userId)
-        BeerApiServiceObject.getBeers(userId)
-}
+        return fetch(`${config.API_BASE_URL}/beers/${userId}`, {
+            headers: {
+                'Authorization': `bearer ${token}`
+            }
+        })
+            .then(res => 
+                (!res.ok)
+                    ? res.json().then(e => Promise.reject(e))
+                    : res.json()
+            )
+            .then(res => this.context.setNewBeers(res))
+    }
+
 
     parseJwt = (token) => {
         let base64Url = token.split('.')[1];
