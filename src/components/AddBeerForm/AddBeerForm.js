@@ -16,9 +16,10 @@ class AddBeerForm extends Component {
         const beerAbv = document.getElementById('beerAbv').value
         const beerRating = parseFloat(document.getElementById('beerRating').value)
 
+
         const newItem = { 
             "name": beerName,
-            "brewery": beerBrewery,
+            "brewery_name": beerBrewery,
             "brewery_location": beerBreweryLocation,
             "tasting_notes":beerTastingNotes,
             "abv": parseInt(beerAbv),

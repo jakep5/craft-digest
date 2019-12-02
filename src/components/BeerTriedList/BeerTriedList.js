@@ -11,14 +11,12 @@ import BeerApiServiceObject from '../../services/beer-api-service'
 export default class BeerTriedList extends React.Component {
 
     static contextType = BeerContext;
-
-
-
     
     componentDidMount = () => {
         const token = sessionStorage.getItem('craft-digest-token-key')
         let payload = this.parseJwt(token)
         let userId = payload.user_id
+        this.context.setUserId(userId)
         BeerApiServiceObject.getBeers(userId)
 }
 
