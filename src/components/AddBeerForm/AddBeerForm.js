@@ -9,6 +9,7 @@ class AddBeerForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
+
         const beerName = document.getElementById('beerName').value
         const beerBrewery = document.getElementById('beerBrewery').value
         const beerBreweryLocation = document.getElementById('beerBreweryLocation').value
@@ -28,8 +29,8 @@ class AddBeerForm extends Component {
         }
 
         this.context.handleAddBeer(newItem)
-/*         this.props.history.push('/triedList');
- */    }
+        this.props.history.push('/triedList');
+}
 
     render() {
         return (
@@ -53,7 +54,7 @@ class AddBeerForm extends Component {
                                 <input type="number" class="abvInput" id="beerAbv" step=".01"/>
 
                                 <label for="beerRating" required>Rating (out of 5):</label>
-                                <input type="number" class="ratingInput" id="beerRating" step=".01"/>
+                                <input type="number" class="ratingInput" id="beerRating" step=".01" max="5"/>
 
                                 <label for="submitButton" required>{null}</label>
                                 <input type="submit" value="Add beer" id="submitButton" />
