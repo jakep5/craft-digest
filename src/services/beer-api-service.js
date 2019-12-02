@@ -38,6 +38,26 @@ const BeerApiServiceObject = {
                     ? res.json().then(e => Promise.reject(e))
                     : res.json()    
                 )
+    },
+
+    deleteBeer(beerId) {
+        return fetch(`${config.API_BASE_URL}/beers/${beerId}`, {
+            method: 'DELETE',
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
+            .then(response => {
+                if(!response.ok) {
+                    return response.json().then(error => {
+                        throw error
+                    })
+                }
+                return response.json()
+            })
+            .catch(error => {
+                console.log(error)
+            })
     }
 }
 
