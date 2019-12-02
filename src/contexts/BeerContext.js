@@ -1,10 +1,12 @@
 import React from 'react'
 import exampleBeers from '../store'
 import BeerApiServiceObject from '../services/beer-api-service'
+import {withRouter} from 'react-router-dom'
+
 
 export const BeerContext = React.createContext();
 
-export class BeerProvider extends React.Component {
+class BeerProvider extends React.Component {
 
     constructor(props) {
         super(props);
@@ -16,7 +18,8 @@ export class BeerProvider extends React.Component {
 
     handleAddBeer = (newBeer) => {
         BeerApiServiceObject.postBeer(newBeer)
-        this.setState({
+/*         this.props.history.push('/triedList')
+ */        this.setState({
             beers: [...this.state.beers, newBeer]
         })
     }
@@ -80,4 +83,8 @@ export class BeerProvider extends React.Component {
     }
 }
 
+export default withRouter(BeerProvider);
+
 export const BeerConsumer = BeerContext.Consumer;
+
+

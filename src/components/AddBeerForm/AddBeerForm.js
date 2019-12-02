@@ -28,8 +28,8 @@ class AddBeerForm extends Component {
         }
 
         this.context.handleAddBeer(newItem)
-        this.props.history.push('/triedList');
-    }
+/*         this.props.history.push('/triedList');
+ */    }
 
     render() {
         return (
@@ -43,7 +43,7 @@ class AddBeerForm extends Component {
                                 <label for="beerBrewery" required>Brewery:</label>
                                 <input type="text" class="breweryName" id="beerBrewery"/>
 
-                                <label for="beerBreweryLocation" required>Brewery location:</label>
+                                <label for="beerBreweryLocation" >Brewery location:</label>
                                 <input type="text" class="breweryLocation" id="beerBreweryLocation" />
 
                                 <label for="beerTastingNotes" id="tastingNotes" required>Tasting notes:</label>

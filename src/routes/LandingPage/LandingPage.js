@@ -17,7 +17,7 @@ export default class LandingPage extends React.Component {
 
                 <section>
                     <h2>Store your favorite beers</h2>
-                    <h3>"Tried" list holds your pst-tried beers, along with any infortmation you would like to store with the beer.</h3>
+                    <h3>"Tried" list holds your past-tried beers, along with any infortmation you would like to store with the beer.</h3>
                 </section>
 
                 <section>
