@@ -13,7 +13,7 @@ class AddBeerForm extends Component {
         const beerBrewery = document.getElementById('beerBrewery').value
         const beerBreweryLocation = document.getElementById('beerBreweryLocation').value
         const beerTastingNotes = document.getElementById('beerTastingNotes').value
-        const beerAbv = document.getElementById('beerAbv').value
+        const beerAbv = parseFloat(document.getElementById('beerAbv').value)
         const beerRating = parseFloat(document.getElementById('beerRating').value)
 
 
@@ -22,7 +22,7 @@ class AddBeerForm extends Component {
             "brewery_name": beerBrewery,
             "brewery_location": beerBreweryLocation,
             "tasting_notes":beerTastingNotes,
-            "abv": parseInt(beerAbv),
+            "abv": beerAbv,
             "rating": beerRating,
             "user_id": this.context.userId
         }

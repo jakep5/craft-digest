@@ -15,10 +15,14 @@ export default class AverageAbv extends Component {
 
         let avgFixed
 
+        console.log(this.context.beers)
+
         this.context.beers.map(beer =>
             averageAbv.push(beer.abv)    
         )
-        
+
+        console.log(averageAbv)
+
         if (this.context.beers.length >= 1) {
             let sum = averageAbv.reduce((previous, current) => current += previous);
             let avg = sum / averageAbv.length;
