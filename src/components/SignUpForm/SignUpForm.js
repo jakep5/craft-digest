@@ -49,10 +49,10 @@ export default class SignUpForm extends React.Component {
                     <legend>Sign up</legend>
                     <br />
                     <label htmlFor="signUpUsername">Username</label>
-                    <input type="text" id="signUpUsername" name='user_name'/>
+                    <input type="text" id="signUpUsername" name='user_name' required/>
                     <br />
                     <label htmlFor="signUpPassword">Password</label>
-                    <input type="password" id="signUpPassword" name='password'/>
+                    <input type="password" id="signUpPassword" name='password' required/>
                     <br />
                     <button type="submit" htmlFor="signUpForm" id="signUpButton">Submit</button>
                 </form>

@@ -23,7 +23,7 @@ class AddBeerForm extends Component {
             "tasting_notes":beerTastingNotes,
             "abv": parseInt(beerAbv),
             "rating": beerRating,
-            /* "user_id": */ //??????????????
+            "user_id": this.context.userId
         }
 
         this.context.handleAddBeer(newItem)

@@ -29,17 +29,16 @@ export default class SignInForm extends React.Component {
             password: password.value
         })
             .then(res => {
+                user_name.value = ''
+                password.value = ''
                 TokenServiceObject.saveAuthToken(res.authToken)
+                this.props.onLoginSuccess()
              })
-            .then(user_name = '')
-            .then(password = '')
-/*             .then(this.props.onLoginSuccess())
- */            .catch(res => {
+            .catch(res => {
                 this.setState({
                     error: res.error
-                })
+            })
         })
-        this.props.onLoginSuccess()
     }
 
     render() {
@@ -58,10 +57,10 @@ export default class SignInForm extends React.Component {
                     <legend>Sign in</legend>
                     <br />
                     <label htmlFor="signInUsername">Username</label>
-                    <input type="text" id="signInUsername" name='user_name' />
+                    <input type="text" id="signInUsername" name='user_name' required/>
                     <br />
                     <label htmlFor="signInPassword">Password</label>
-                    <input type="password" id="signInPassword" name='password'/>
+                    <input type="password" id="signInPassword" name='password' required/>
                     <br />
                     <button type="submit" htmlFor="signInForm" id="logInButton">Log in</button>
                 </form>

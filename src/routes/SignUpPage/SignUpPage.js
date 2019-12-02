@@ -12,6 +12,7 @@ export default class SignUpPage extends React.Component {
     }
 
     handleRegistrationSuccess = user => {
+        console.log('here')
         const { history } = this.props
         history.push('/signIn')
     }
@@ -30,7 +31,7 @@ export default class SignUpPage extends React.Component {
                 <header role="banner">
                     <h1>Sign up for Craft Digest!</h1>
 
-                    <SignUpForm onRegistration={this.handleRegistrationSuccess}/>
+                    <SignUpForm onRegistrationSuccess={this.handleRegistrationSuccess}/>
 
                 </header>
             </>
