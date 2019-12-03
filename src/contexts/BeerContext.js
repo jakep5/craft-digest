@@ -34,7 +34,6 @@ class BeerProvider extends React.Component {
     deleteBeer = (beerId) => {
         const afterDeleteBeers = this.state.beers.filter(br =>
             br.id !== beerId)
-        console.log(beerId)
         this.setState({
             beers: afterDeleteBeers
         })
