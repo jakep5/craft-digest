@@ -8,6 +8,10 @@ button.removeBeer {
     padding: 5px 8px;
     display: block;
     margin-left: calc(50% - 50px);
+    background-color: transparent;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid white; 
 }
 
 p.beerRating {
