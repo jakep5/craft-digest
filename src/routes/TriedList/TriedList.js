@@ -29,10 +29,10 @@ export default class TriedList extends React.Component {
                         <p id="logOutLink">Log out</p>
                     </Link>
                 </nav>
-                <header role="banner">
+                <header role="banner" className="triedList">
                     <h1 className="triedList">Tried List</h1>
-                    <Link to="/addBeer" style={{ textDecoration: 'none' }}>
-                        <button id="addToTried"> + Add to list</button>
+                    <Link to="/addBeer" style={{ textDecoration: 'none' }} className="hvr-float-shadow">
+                        <button id="addToTried" className="hvr-float-shadow"> + Add to list</button>
                     </Link>
                 </header>
 

@@ -28,7 +28,7 @@ export default class SignUpPage extends React.Component {
                     </Link>
                 </nav>
                 <header role="banner">
-                    <h1>Sign up for Craft Digest!</h1>
+                    <h1 className="signUp">Sign up for Craft Digest!</h1>
 
                     <SignUpForm onRegistrationSuccess={this.handleRegistrationSuccess}/>
 

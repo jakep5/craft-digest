@@ -1,8 +1,4 @@
-nav,
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
-}
+
 
 nav {
   position: fixed;
@@ -12,6 +8,9 @@ nav {
   z-index: 10;
 }
 
+html {
+  background-color: #3B2215;
+}
 
 form {
   position: relative;
@@ -29,8 +28,34 @@ button {
   padding: 10px 20px;
 }
 
+header.signIn {
+  background-color: #3B2215;
+}
+
+
 p#signInLink {
     display: inline-block;
     margin-right: 1%;
     margin-top: -1%;
+}
+
+h1.signIn {
+  margin-top: 20%;
+}
+
+div.dummyAccount {
+  margin-top: 20%;
+}
+
+@media only screen and (min-width:1024px) {
+  h1.signIn {
+    margin-top: 10%;
+  }
+
+  div.dummyAccount {
+    margin-top: 5%;
+  }
+  
+
+
 }

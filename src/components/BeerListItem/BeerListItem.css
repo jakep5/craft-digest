@@ -1,5 +1,7 @@
 div.beerListItemHolder {
-    margin-bottom: 8%;
+    margin-bottom: 25%;
+    width: 95%;
+    margin-left: 2%;
 }
 
 button.removeBeer {
@@ -11,4 +13,19 @@ button.removeBeer {
 p.beerRating {
     display: inline;
     font-size: 12px;
+}
+
+p.beerBrewery, p.beerRating, p.beerAbv, p.beerTastingNotes, p.beerBreweryLocation {
+    font-size: 18px;
+} 
+
+h3.beerName {
+    font-size: 25px;
+}
+
+@media only screen and (min-width: 1024px) {
+    div.beerListItemHolder {
+        margin-bottom: 5%;
+        margin-left: 2%;
+    }
 }

@@ -10,9 +10,11 @@ export default class LandingPage extends React.Component {
                 <nav role="navigation">
                     <Nav />
                 </nav>
-                <header role="banner">
-                    <h1>Craft Digest</h1>
-                    <h2>Store, analyze, and reminisce over past beers while viewing your personalized beer trends.</h2>
+                <header role="banner" className="homePage">
+                    <div className="titleHolder">
+                        <h1 className="title">Craft Digest</h1>
+                        <h2 className="title">Store, analyze, and reminisce over past beers while viewing your personalized beer trends</h2>
+                    </div>
                 </header>
 
                 <section>
@@ -23,7 +25,7 @@ export default class LandingPage extends React.Component {
                 <section>
                     <h2>Analyze and view your beer-drinking habits</h2>
                     <h3>View data regarding the type of beer, style of beer, tasing notes, and ABV of your past beers.</h3>
-                    <h4>Have Craft Digest suggest a beer for you using your recent beer choices!</h4>
+                    <h4 className="subText">Have Craft Digest suggest a beer for you using your recent beer choices!</h4>
                 </section>
 
                 <section>

@@ -11,11 +11,7 @@ body {
   line-height: 1.5;
 }
 
-nav,
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
-}
+
 
 nav {
   position: fixed;
@@ -33,10 +29,6 @@ p.logOut {
     position: relative;
 }
 
-header {
-  padding: .5% 0;
-}
-
 h1.addBeerTitle {
     margin-top: 5%;
 }
@@ -44,7 +36,6 @@ h1.addBeerTitle {
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
 }
 
 section.addBeerSection {
@@ -52,9 +43,7 @@ section.addBeerSection {
     text-align: center;
 }
 
-section:nth-child(even) {
-  background-color: #ddd;
-}
+
 
 form#beerSearchForm {
     margin-top: -5%;

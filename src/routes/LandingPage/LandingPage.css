@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -15,7 +18,7 @@ body {
 nav,
 footer {
   padding: 1% 0;
-  background-color: #aaa;
+  background-color: rgb(17, 7, 1);
 }
 
 nav {
@@ -29,24 +32,49 @@ nav {
 
 
 
-header {
-  padding: 12% 0;
+header.homePage {
+  padding: 27% 0;
   display: block;
   height: 50%;
+  background-color: #3B2215; 
+  background-size: cover;
+
 }
 
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
+  background-color: #210D02;
 }
 
 section:nth-child(even) {
-  background-color: #ddd;
+  background-color: #3B2215;
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+h2.title {
+  font-size: 18px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 100
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
 }
 
 p#signUpLinkLanding {
@@ -57,3 +85,38 @@ p#signUpLinkLanding {
 p#signInLinkLanding {
   display: inline-block;
 }
+
+@media only screen and (min-width: 1024px) {
+  header.homePage {
+    background-image: url("https://images8.alphacoders.com/413/thumb-1920-413078.jpg");
+  }
+
+  div.titleHolder {
+    display: block;
+    width: 50%;
+    position: relative;
+    left: 45%;
+    margin-top: -13%;
+    color: white;
+  }
+
+  h1.title {
+    font-size: 80px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h2.title {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h4.subText {
+    margin-top: 3%;
+  }
+} 
