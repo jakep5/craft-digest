@@ -9,7 +9,7 @@ export default class BeerListItem extends Component {
         return (
             <BeerConsumer>
                 {value => (
-                    <div class="beerListItemHolder">
+                    <div className="beerListItemHolder gridBox">
                         <h3 className="beerName">{this.props.beerName}</h3>
                         <p className="beerBrewery">Brewery: {this.props.beerBrewery}</p>
                         <p className="beerBreweryLocation">Brewery location: {this.props.beerBreweryLocation}</p>
@@ -20,6 +20,7 @@ export default class BeerListItem extends Component {
                             starDimension="25px"
                             starSpacing="5px"
                             name="rating"
+                            starRatedColor="rgb(255, 255, 0)"
                         /> <p className="beerRating">{`(${this.props.beerRating})`}</p>
                         <button className="removeBeer" onClick={() => {
                             value.deleteBeer(this.props.beerId)

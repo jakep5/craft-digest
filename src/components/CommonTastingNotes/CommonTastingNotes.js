@@ -65,7 +65,7 @@ export default class CommonTastingNotes extends Component {
                             legendFont={{
                                     family: 'Arial',
                                     size: 12,
-                                    color: '#000',
+                                    color: 'white',
                                     weight: 'bold',
                                 }}
                             valueFont={{

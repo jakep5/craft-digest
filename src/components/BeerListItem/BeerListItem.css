@@ -20,7 +20,12 @@ p.beerBrewery, p.beerRating, p.beerAbv, p.beerTastingNotes, p.beerBreweryLocatio
 } 
 
 h3.beerName {
-    font-size: 25px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif; 
 }
 
 @media only screen and (min-width: 1024px) {

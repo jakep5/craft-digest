@@ -38,20 +38,31 @@ export default class TriedList extends React.Component {
 
                 <section id="section1">
                     <BeerTriedList triedBeers={this.props.triedBeers}/>
-                    <p className="expandList">Click to see expanded list</p>
                 </section>
 
                 <section>
                     <h1 className="synopsis">Your beer synopsis:</h1>
-    
-                    <h3 className="averageAbv">Average ABV of saved beers:</h3>
-                        <AverageAbv />
-                    <h3 className="favoriteBrewery">Favorite brewery:</h3>
-                        <FavoriteBrewery />
-                    <h3 className="numberOfBeers">Number of beers tried:</h3>
-                        <NumberOfBeersAdded />
-                    <h3 className="commonTastingNotes">Common tasting notes:</h3>
-                        <CommonTastingNotes />
+
+
+                    <div className="statWrapper">
+                        <div className="statItem">
+                            <h3 className="averageAbv">Average ABV of saved beers:</h3>
+                                <AverageAbv />
+                        </div>
+                        <div className="statItem">
+                            <h3 className="favoriteBrewery">Favorite brewery:</h3>
+                                <FavoriteBrewery />
+                        </div>
+                        <div className="statItem">
+                        <h3 className="numberOfBeers">Number of beers tried:</h3>
+                            <NumberOfBeersAdded />
+                        </div>
+                        
+                    </div>
+                    <div className="tastingNotes">
+                        <h3 className="commonTastingNotes">Common tasting notes:</h3>
+                            <CommonTastingNotes />
+                    </div>
                 </section>
             </>
         )
