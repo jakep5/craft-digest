@@ -12,7 +12,6 @@ export default class SignUpPage extends React.Component {
     }
 
     handleRegistrationSuccess = user => {
-        console.log('here')
         const { history } = this.props
         history.push('/signIn')
     }

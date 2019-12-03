@@ -16,7 +16,6 @@ export default class SignInPage extends React.Component {
     static contextType = BeerContext
 
     handleLoginSuccess = () => {
-        console.log('here')
         const { history } = this.props
         history.push('/triedList')
     }
