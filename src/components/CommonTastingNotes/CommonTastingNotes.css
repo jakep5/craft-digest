@@ -1,0 +1,17 @@
+div#bubbleChart {
+    display: block;
+    width: 100%;
+    position: relative;
+    left: 0%;
+}
+
+@media only screen and (min-width: 1000px) {
+    p#warning {
+        display: none !important;
+    }
+}
+
+
+
+
+
