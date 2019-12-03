@@ -1,9 +1,90 @@
-h1.signUp {
-    margin-top: 25%;
-}
 
-@media only screen and (min-width: 1024px) {
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  html {
+    background-color: #3B2215;
+  }
+  
+  div#root {
+    height: 100%;
+  }
+  
+  html, body, .signInWrapper {
+    height: 100%;
+    margin: 0;
+  }
+  
+  
+  main.App {
+    height: 100%;
+  }
+  
+  div.app {
+    height: 100%;
+  }
+  
+  
+  form {
+    position: relative;
+    left: 0%;
+  }
+  
+  p#returnToHome {
+      float: left;
+      margin-left: 2%;
+      margin-top: 0%;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+  
+  header.signIn {
+    background-color: #3B2215;
+  }
+  
+  
+  p#signInLink {
+      display: inline-block;
+      margin-right: 1%;
+      margin-top: -1%;
+  }
+  
+  h1.signIn {
+    margin-top: 15%;
+  }
+  
+  div.dummyAccount {
+    margin-top: 20%;
+  }
+  
+  @media only screen and (min-width:1024px) {
     h1.signUp {
-      margin-top: 10%;
+      position: absolute;
+      top: 20%;
+      right: 17%;
     }
-}
+  
+    div.signUpWrapper {
+      background-image: url("https://images8.alphacoders.com/413/thumb-1920-413078.jpg");
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      margin-top: 0%;
+    }
+  
+    div.signInHolder {
+      display: block;
+      margin-left: 32%;
+      margin-top: 0%;
+    }
+  }
+  

@@ -60,6 +60,11 @@ export default class SignInForm extends React.Component {
                          <input type="password" id="signInPassword" title="username" placeholder="password" name='password' required/>
 
                          <button type="submit" htmlFor="signInForm" class="btn" id="logInButton">Log in</button>
+                        <div className="dummy">
+                            <p className="dummy">Dummy account:</p>
+                            <p className="dummy">Username: testuser</p>
+                            <p className="dummy">Password: !Testpassword1</p>
+                         </div>
                     </form>
                 </div>
             </>

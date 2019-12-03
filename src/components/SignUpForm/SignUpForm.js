@@ -42,20 +42,22 @@ export default class SignUpForm extends React.Component {
         const { error } = this.state
         return (
             <>
-                <form id="signUpForm" onSubmit={(e) => this.handleRegistrationSubmit(e)}>
-                    <div role='alert'>
-                      {error && <p className='red'>{error}</p>}
-                    </div>
-                    <legend>Sign up</legend>
-                    <br />
-                    <label htmlFor="signUpUsername">Username</label>
-                    <input type="text" id="signUpUsername" name='user_name' required/>
-                    <br />
-                    <label htmlFor="signUpPassword">Password</label>
-                    <input type="password" id="signUpPassword" name='password' required/>
-                    <br />
-                    <button type="submit" htmlFor="signUpForm" id="signUpButton">Submit</button>
-                </form>
+                <div className="log-form">
+                    <form 
+                        id="signInForm" 
+                        onSubmit={(e) => this.handleRegistrationSubmit(e)}
+                    >
+                        <div role='alert'>
+                        {error && <p className='red'>{error}</p>}
+                        </div>
+                        <input type="text" id="signInUsername" title="username" placeholder="username" name='user_name' required/>
+
+                        <input type="password" id="signInPassword" title="username" placeholder="password" name='password' required/>
+
+                        <button type="submit" htmlFor="signInForm" class="btn" id="logInButton">Sign up</button>
+                    
+                    </form>
+                </div>
             </>
         )
     }

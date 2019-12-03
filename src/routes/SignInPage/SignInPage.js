@@ -32,16 +32,13 @@ export default class SignInPage extends React.Component {
                         <p id="signInLink">Sign up</p>
                     </Link>
                 </nav>
-                <header role="banner" className="signIn">
-                    <h1 className="signIn">Sign in to Craft Digest!</h1>
+                <div role="banner" className="signInWrapper">
+                    <div className="signInHolder">
+                        <h1 className="signIn">Sign in to Craft Digest!</h1>
 
-                    <SignInForm onLoginSuccess={this.handleLoginSuccess}/>
-                    <div className="dummyAccount">
-                        <p>Dummy account:</p>
-                        <p>Username: testuser</p>
-                        <p>Password: !Testpassword1</p>
+                        <SignInForm onLoginSuccess={this.handleLoginSuccess}/>
                     </div>
-                </header>
+                </div>
             </>
         )
     }
