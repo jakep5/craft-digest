@@ -26,6 +26,10 @@ input#submitButton {
     display: inline-block;
     padding: 15px 40px;
     margin-right: 0%;
+    background-color: transparent;
+    font-size: 20px;
+    border: 2px solid white;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 5%;
 }
 

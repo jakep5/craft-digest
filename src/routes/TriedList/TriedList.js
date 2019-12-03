@@ -60,9 +60,9 @@ export default class TriedList extends React.Component {
                         
                     </div>
                     <div className="tastingNotes">
-                        <h3 className="commonTastingNotes">Common tasting notes:</h3>
-                            <CommonTastingNotes />
-                    </div>
+                            <h3 className="commonTastingNotes">Common tasting notes:</h3>
+                                <CommonTastingNotes />
+                        </div>
                 </section>
             </>
         )
