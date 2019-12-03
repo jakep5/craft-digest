@@ -38,6 +38,10 @@ export default class SignInPage extends React.Component {
 
                     <SignInForm onLoginSuccess={this.handleLoginSuccess}/>
 
+                    <p>Dummy account:</p>
+                    <p>Username: testuser</p>
+                    <p>Password: !Testpassword1</p>
+
                 </header>
             </>
         )
