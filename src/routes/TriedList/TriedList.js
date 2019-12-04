@@ -43,7 +43,7 @@ export default class TriedList extends React.Component {
                     </Link>
                 </header>
 
-                <section id="section1" role="list">
+                <section id="section1" className="fade-in" role="list">
                     <BeerTriedList triedBeers={this.props.triedBeers}/>
                 </section>
 

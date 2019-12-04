@@ -39,22 +39,22 @@ class AddBeerForm extends Component {
                                 <legend className="formLegend">Add a beer:</legend>
 
                                 <label for="beerName" required>Name of beer:</label>
-                                <input type="text" class="beerName" id="beerName"/>
+                                <input type="text" className="beerName beerInputField" id="beerName"/>
 
                                 <label for="beerBrewery" required>Brewery:</label>
-                                <input type="text" class="breweryName" id="beerBrewery"/>
+                                <input type="text" className="breweryName beerInputField" id="beerBrewery"/>
 
                                 <label for="beerBreweryLocation" >Brewery location:</label>
-                                <input type="text" class="breweryLocation" id="beerBreweryLocation" />
+                                <input type="text" className="breweryLocation beerInputField" id="beerBreweryLocation" />
 
                                 <label for="beerTastingNotes" id="tastingNotes" required>Tasting notes:</label>
-                                <textarea type="text" class="tastingNotes" id="beerTastingNotes"/>
+                                <textarea type="text" className="tastingNotes beerInputField" id="beerTastingNotes"/>
 
                                 <label for="beerAbv" required>ABV:</label>
-                                <input type="number" class="abvInput" id="beerAbv" step=".01"/>
+                                <input type="number" className="abvInput beerInputField" id="beerAbv" step=".01"/>
 
                                 <label for="beerRating" required>Rating (out of 5):</label>
-                                <input type="number" class="ratingInput" id="beerRating" step=".01" max="5"/>
+                                <input type="number" className="ratingInput beerInputField" id="beerRating" step=".01" max="5"/>
 
                                 <label for="submitButton" required>{null}</label>
                                 <input type="submit" value="Add beer" id="submitButton" />

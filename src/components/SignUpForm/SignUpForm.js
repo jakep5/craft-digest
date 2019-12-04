@@ -41,7 +41,7 @@ export default class SignUpForm extends React.Component {
         const { error } = this.state
         return (
             <>
-                <div className="log-form log-formSignUp" role="form">
+                <div className="log-form log-formSignUp fade-in" role="form">
                     <form 
                         id="signInForm" 
                         onSubmit={(e) => this.handleRegistrationSubmit(e)}

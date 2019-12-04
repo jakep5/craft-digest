@@ -10,7 +10,19 @@ div.addBeerHolder {
 .addBeerHolder label {
     display: inline-block;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 3%;
+}
+
+.beerInputField {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+}
+
+#beerSearchForm input {
+    color: black;
+    font-family:'Montserrat', sans-serif; 
+    font-weight: bolder;
 }
 
 textArea {
@@ -30,7 +42,9 @@ input#submitButton {
     font-size: 20px;
     border: 2px solid white;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 5%;
+    margin-top: 3%;
+    color: white;
+    font-weight: lighter;
 }
 
 
@@ -46,7 +60,6 @@ legend {
 @media only screen and (min-width: 500px) {
     form {
         display: inline-block;
-        width:30%;
         position: relative;
     }
 
