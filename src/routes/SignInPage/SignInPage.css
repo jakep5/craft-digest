@@ -91,6 +91,14 @@ div.dummyAccount {
   }
 }
 
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+  div.log-form {
+    position: relative;
+    top: 300px;
+    left: 22%;
+  }
+}
+
 @media only screen and (min-width:1024px) {
   h1.signIn {
     position: absolute;

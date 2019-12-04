@@ -10,8 +10,15 @@ button.removeBeer {
     margin-left: calc(50% - 50px);
     background-color: transparent;
     font-size: 15px;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: linear;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid white; 
+}
+
+button.removeBeer:hover {
+    background-color: black;
 }
 
 p.beerRating {
