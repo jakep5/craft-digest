@@ -54,11 +54,14 @@ export default class SignInForm extends React.Component {
                         <div role='alert'>
                         {error && <p className='red'>{error}</p>}
                         </div>
-                         <input type="text" id="signInUsername" title="username" placeholder="username" name='user_name' required/>
 
-                         <input type="password" id="signInPassword" title="username" placeholder="password" name='password' required/>
+                        <label htmlFor="signInUsername">Username</label>
+                        <input type="text" id="signInUsername" title="username" placeholder="username" name='user_name' required/>
 
-                         <button type="submit" htmlFor="signInForm" class="btn" id="logInButton">Log in</button>
+                        <label htmlFor="signInPassword">Password</label>
+                        <input type="password" id="signInPassword" title="password" placeholder="password" name='password' required/>
+
+                        <button type="submit" htmlFor="signInForm" class="btn" id="logInButton">Log in</button>
                         <div className="dummy" role="article">
                             <p className="dummy">Dummy account:</p>
                             <p className="dummy">Username: testuser</p>

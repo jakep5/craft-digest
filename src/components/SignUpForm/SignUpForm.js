@@ -49,9 +49,13 @@ export default class SignUpForm extends React.Component {
                         <div role='alert'>
                         {error && <p className='red'>{error}</p>}
                         </div>
-                        <input type="text" id="signInUsername" title="username" placeholder="username" name='user_name' required/>
 
-                        <input type="password" id="signInPassword" title="username" placeholder="password" name='password' required/>
+                        <label htmlFor="signUpUsername">Username</label>
+                        <input type="text" id="signUpUsername" title="username" placeholder="username" name='user_name' required/>
+
+
+                        <label htmlFor="signUpPassword">Password</label>
+                        <input type="password" id="signUpPassword" title="password" placeholder="password" name='password' required/>
 
                         <button type="submit" htmlFor="signInForm" class="btn" id="logInButton">Sign up</button>
                     

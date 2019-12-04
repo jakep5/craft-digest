@@ -1,10 +1,10 @@
-input#signInUsername {
+input#signUpUsername {
     margin-left: 1%;
     position: relative;
     left: 4%;
 }
 
-input#signInPassword {
+input#signUpPassword {
     margin-left: 1%;
     margin-top: 1.5%;
     position: relative;
@@ -178,11 +178,11 @@ div.dummy {
   
 
 @media only screen and (min-width: 500px) {
-    input#signInPassword {
+    input#signUpPassword {
         left: 8px;
     }
 
-    input#signInUsername {
+    input#signUpUsername {
         left: 5px;
     }
 
