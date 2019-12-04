@@ -89,6 +89,27 @@ p#signInLinkLanding {
   display: inline-block;
 }
 
+.bubbles {
+display: inline-block;
+font-family: arial;
+position: relative;
+}
+
+.bubbles h1.title {
+position: relative;
+margin: 1em 0 0;
+font-family: 'Montserrat', sans-serif;
+z-index: 2;
+}
+
+.individual-bubble {
+position: absolute;
+border-radius: 100%;
+bottom: 10px;
+background-color: #fff;
+z-index: 1;
+}
+
 @media only screen and (min-width: 1024px) {
   header.homePage {
     background-image: url("https://images8.alphacoders.com/413/thumb-1920-413078.jpg");

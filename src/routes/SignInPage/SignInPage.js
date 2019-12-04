@@ -20,6 +20,10 @@ export default class SignInPage extends React.Component {
         history.push('/triedList')
     }
 
+    componentDidMount() {
+        document.title = "Sign In Page"
+    }
+
     render() {
         return (
             <>

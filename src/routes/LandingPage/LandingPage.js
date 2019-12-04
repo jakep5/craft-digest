@@ -2,8 +2,47 @@ import React from 'react'
 import Nav from '../../components/Nav/Nav'
 import { Link } from 'react-router-dom'
 import './LandingPage.css'
+import { render } from 'react-dom'
+import $ from "jquery"
+import jQuery from "jquery"
 
 export default class LandingPage extends React.Component {
+
+    componentDidMount() {
+        document.title = "Craft Digest Home Page"
+
+        //bubble text effect
+        jQuery(document).ready(function($){
+
+            var bArray = [];
+            var sArray = [4,6,8,10];
+
+            for (var i = 0; i < $('.bubbles').width(); i++) {
+                bArray.push(i);
+            }
+
+            
+            function randomValue(arr) {
+                return arr[Math.floor(Math.random() * arr.length)];
+            }
+
+            setInterval(function(){
+
+                var size = randomValue(sArray);
+                $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+
+                $('.individual-bubble').animate({
+                    'bottom': '100%',
+                    'opacity' : '-=0.7'
+                }, 3000, function(){
+                    $(this).remove()
+                }
+                );
+
+            }, 350);
+        });
+    } 
+
     render() {
         return (
             <>
@@ -12,7 +51,17 @@ export default class LandingPage extends React.Component {
                 </nav>
                 <header role="banner" className="homePage">
                     <div className="titleHolder">
-                        <h1 className="title">Craft Digest</h1>
+
+                        <div className="center-outer">
+                        <div className="center-innner">
+
+                        <div className="bubbles">
+                            <h1 className="title">Craft Digest</h1>
+                        </div>
+
+                        </div>
+                        </div>
+
                         <h2 className="title">Store, analyze, and reminisce over past beers while viewing your personalized beer trends</h2>
                     </div>
                 </header>

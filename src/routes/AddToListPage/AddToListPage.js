@@ -10,6 +10,10 @@ export default class AddToListPage extends Component {
         TokenServiceObject.clearAuthToken()
     }
 
+    componentDidMount() {
+        document.title = "Add Beer To Tried List"
+    }
+
     render() {
         return (
             <div>

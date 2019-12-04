@@ -16,6 +16,10 @@ export default class SignUpPage extends React.Component {
         history.push('/signIn')
     }
 
+    componentDidMount() {
+        document.title = "Sign Up Page"
+    }
+
     render() {
         return (
             <>

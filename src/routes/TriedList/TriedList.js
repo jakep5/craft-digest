@@ -13,6 +13,10 @@ export default class TriedList extends React.Component {
         TokenServiceObject.clearAuthToken()
     }
 
+    componentDidMount() {
+        document.title = "Craft Digest Tried List"
+    }
+
     render () {
 
         return (
