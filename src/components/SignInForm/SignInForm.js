@@ -46,7 +46,7 @@ export default class SignInForm extends React.Component {
 
         return (
             <>
-                <div className="log-form" role="form">
+                <div className="log-form log-formSignIn" role="form">
                     <form 
                         id="signInForm" 
                         onSubmit={(e) => this.handleSubmitAuthentication(e)}

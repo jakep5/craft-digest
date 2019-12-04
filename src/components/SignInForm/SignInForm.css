@@ -72,9 +72,6 @@ body {
   min-width: 320px;
   max-width: 475px;
   background: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
@@ -166,6 +163,10 @@ p.dummy {
 div.dummy {
     margin-top: 10%;
 }
+
+div.log-formSignIn {
+  margin-top: -3%;
+}
   
 
 @media only screen and (min-width: 500px) {
@@ -182,8 +183,7 @@ div.dummy {
         font-family: 'Montserrat', sans-serif;
     }
 
-    
-    
-
-    
+    div.log-formSignIn {
+      margin-top: 0%;
+    }
 }

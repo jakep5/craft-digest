@@ -71,7 +71,7 @@ p#signInLink {
 h1.signIn {
   display: inline-block;
   position: relative;
-  margin-top: 15%;
+  margin-top: 20%;
 }
 
 div.dummyAccount {
@@ -94,7 +94,7 @@ div.dummyAccount {
 @media only screen and (min-width:1024px) {
   h1.signIn {
     position: absolute;
-    left: 48%;
+    right: 390px;
     top: 10%;
     margin-top: 0%;
   }
@@ -115,8 +115,9 @@ div.dummyAccount {
 
   div.log-form {
     position: absolute;
-    left: 64%;
+    right: 220px;
     top: 58%;
+    margin-top: 0%;
   }
 }
 
