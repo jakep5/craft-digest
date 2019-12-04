@@ -167,6 +167,28 @@ div.dummy {
 div.log-formSignIn {
   margin-top: -3%;
 }
+
+button#logInButton {
+  padding: 15px 30px;
+  background-color: #3B2215;
+  border: 2px solid white;
+  font-size: 15px;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+button#logInButton:hover {
+  background-color: #110701;
+}
+
+button#logInButton:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
   
 
 @media only screen and (min-width: 500px) {
