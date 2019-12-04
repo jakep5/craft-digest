@@ -1,5 +1,4 @@
 import React from 'react'
-import exampleBeers from '../store'
 import BeerApiServiceObject from '../services/beer-api-service'
 import {withRouter} from 'react-router-dom'
 

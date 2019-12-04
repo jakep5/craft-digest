@@ -6,7 +6,6 @@ import SignInPage from './routes/SignInPage/SignInPage'
 import TriedList from './routes/TriedList/TriedList'
 import AddToListPage from './routes/AddToListPage/AddToListPage';
 import RecommendBeerPage from './routes/RecommendBeerPage/RecommendBeerPage';
-import { AnimatedRoute } from 'react-router-transition'
 
 
 class App extends React.Component {

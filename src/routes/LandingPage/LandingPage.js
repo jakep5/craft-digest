@@ -2,8 +2,6 @@ import React from 'react'
 import Nav from '../../components/Nav/Nav'
 import { Link } from 'react-router-dom'
 import './LandingPage.css'
-import { render } from 'react-dom'
-import $ from "jquery"
 import jQuery from "jquery"
 
 export default class LandingPage extends React.Component {

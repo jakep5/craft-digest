@@ -12,7 +12,7 @@ export default class CommonTastingNotes extends Component {
 
         let tastingNotesArray = [];
 
-        this.context.beers.map(beer => {
+        this.context.beers.forEach(beer => {
             tastingNotesArray.push(beer.tasting_notes)
         })
 

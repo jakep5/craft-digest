@@ -24,7 +24,7 @@ export default class FavoriteBrewery extends Component {
 
         let mostFrequent
 
-        this.context.beers.map(beer => {
+        this.context.beers.forEach(beer => {
             breweryArray.push(beer.brewery_name)
         })
 
