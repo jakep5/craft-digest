@@ -28,6 +28,8 @@ export default class SignInPage extends React.Component {
                         <p id="returnToHome">Return to homepage</p>
                     </Link>
 
+                    <i class="fas fa-beer" id="beerIconSignIn"></i>
+
                     <Link to="/signUp" style={{ textDecoration: 'none' }}>
                         <p id="signInLink">Sign up</p>
                     </Link>

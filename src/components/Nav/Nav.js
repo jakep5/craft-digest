@@ -6,6 +6,7 @@ export default class Nav extends React.Component {
     render() {
         return (
             <nav role="navigation">
+                <i class="fas fa-beer" id="beerIcon"></i>
                 <Link to="/signUp" style={{ textDecoration: 'none' }}>
                     <p id="signUp">Sign up</p>
                 </Link>

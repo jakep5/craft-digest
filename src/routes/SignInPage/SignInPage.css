@@ -47,8 +47,18 @@ button {
   padding: 10px 20px;
 }
 
-header.signIn {
-  background-color: #3B2215;
+div.signInWrapper {
+  background-image: url("https://wallpaperplay.com/walls/full/6/f/e/326971.jpg");
+  text-align: center;
+}
+
+div.signInHolder {
+  display: inline-block;
+  text-align: center;
+}
+
+div.log-form {
+  display: inline-block;
 }
 
 
@@ -59,6 +69,8 @@ p#signInLink {
 }
 
 h1.signIn {
+  display: inline-block;
+  position: relative;
   margin-top: 15%;
 }
 
@@ -66,11 +78,25 @@ div.dummyAccount {
   margin-top: 20%;
 }
 
+#beerIconSignIn {
+  position: absolute;
+  left: calc(50% - 15px);
+  top: 20%;
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 500px) {
+  #beerIconSignIn {
+    display: none !important;
+  }
+}
+
 @media only screen and (min-width:1024px) {
   h1.signIn {
     position: absolute;
-    top: -10%;
-    right: 18%;
+    left: 48%;
+    top: 10%;
+    margin-top: 0%;
   }
 
   div.signInWrapper {
@@ -87,10 +113,13 @@ div.dummyAccount {
     margin-top: 0%;
   }
 
-  
-
-
-  
-
-
+  div.log-form {
+    position: absolute;
+    left: 64%;
+    top: 58%;
+  }
 }
+
+
+
+  

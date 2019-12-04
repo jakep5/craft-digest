@@ -39,7 +39,7 @@ header.homePage, header.signIn {
   padding: 27% 0;
   display: block;
   height: 50%;
-  background-color: #3B2215; 
+  background-image: url("https://wallpaperplay.com/walls/full/6/f/e/326971.jpg");
   background-size: cover;
 
 }
@@ -123,3 +123,4 @@ p#signInLinkLanding {
     margin-top: 3%;
   }
 } 
+

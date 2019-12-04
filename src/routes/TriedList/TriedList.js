@@ -21,6 +21,9 @@ export default class TriedList extends React.Component {
                     <Link to="/randomBeer" style={{ textDecoration: 'none' }}>
                         <p id="recommendBeer">Recommend me a beer!</p>
                     </Link>
+
+                    <i class="fas fa-beer" id="beerIconSignIn"></i>
+
                     <Link 
                         to="/" 
                         style={{ textDecoration: 'none' }}

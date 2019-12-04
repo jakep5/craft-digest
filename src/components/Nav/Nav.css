@@ -15,6 +15,7 @@ nav {
   margin-right: 5%;
   margin-top: 0%;
   position: relative;
+  font-size: 17px;
 
 }
 
@@ -24,4 +25,19 @@ nav {
   margin-top: 0%;
   margin-bottom: -.5%;
   position: relative;
+  font-size: 17px;
 }
+
+#beerIcon {
+  position: absolute;
+  left: 2%;
+  top: 35%;
+}
+
+@media only screen and (min-width: 768px) {
+  #beerIcon {
+    font-size: 35px;
+    top: 20%;
+  }
+}
+

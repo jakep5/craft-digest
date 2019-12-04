@@ -16,7 +16,7 @@ nav {
     height: 100%;
   }
   
-  html, body, .signInWrapper {
+  html, body, .signUpWrapper {
     height: 100%;
     margin: 0;
   }
@@ -50,6 +50,13 @@ nav {
   header.signIn {
     background-color: #3B2215;
   }
+
+  h1.signUp {
+    position: relative;
+    top: 10%;
+  }
+
+
   
   
   p#signInLink {
@@ -57,10 +64,11 @@ nav {
       margin-right: 1%;
       margin-top: -1%;
   }
-  
-  h1.signIn {
-    margin-top: 15%;
+
+  div.signUpWrapper {
+    background-image: url("https://wallpaperplay.com/walls/full/6/f/e/326971.jpg");
   }
+
   
   div.dummyAccount {
     margin-top: 20%;
