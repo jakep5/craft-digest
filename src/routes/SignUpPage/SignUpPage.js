@@ -27,6 +27,9 @@ export default class SignUpPage extends React.Component {
                     <Link to="/" style={{ textDecoration: 'none' }}>
                         <p id="returnToHome">Return to homepage</p>
                     </Link>
+
+                    <i class="fas fa-beer" id="beerIconSignIn"></i>
+
                     <Link to="/signIn" style={{ textDecoration: 'none' }}>
                         <p id="signInLink">Sign in</p>
                     </Link>
