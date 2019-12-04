@@ -43,11 +43,11 @@ export default class TriedList extends React.Component {
                     </Link>
                 </header>
 
-                <section id="section1">
+                <section id="section1" role="list">
                     <BeerTriedList triedBeers={this.props.triedBeers}/>
                 </section>
 
-                <section>
+                <section role="contentinfo">
                     <h1 className="synopsis">Your beer synopsis:</h1>
 
 

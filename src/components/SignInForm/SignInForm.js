@@ -46,7 +46,7 @@ export default class SignInForm extends React.Component {
 
         return (
             <>
-                <div className="log-form">
+                <div className="log-form" role="form">
                     <form 
                         id="signInForm" 
                         onSubmit={(e) => this.handleSubmitAuthentication(e)}
@@ -59,7 +59,7 @@ export default class SignInForm extends React.Component {
                          <input type="password" id="signInPassword" title="username" placeholder="password" name='password' required/>
 
                          <button type="submit" htmlFor="signInForm" class="btn" id="logInButton">Log in</button>
-                        <div className="dummy">
+                        <div className="dummy" role="article">
                             <p className="dummy">Dummy account:</p>
                             <p className="dummy">Username: testuser</p>
                             <p className="dummy">Password: !Testpassword1</p>

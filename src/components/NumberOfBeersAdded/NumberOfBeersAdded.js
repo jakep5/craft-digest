@@ -10,7 +10,7 @@ export default class NumberOfBeersAdded extends Component {
         let beerCount = this.context.beers.length
 
         return (
-            <div className="beerCountHolder">
+            <div className="beerCountHolder" role="contentinfo">
                 {beerCount}
             </div>
         )

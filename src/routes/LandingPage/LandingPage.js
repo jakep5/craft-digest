@@ -47,7 +47,7 @@ export default class LandingPage extends React.Component {
                 <nav role="navigation">
                     <Nav />
                 </nav>
-                <header role="banner" className="homePage">
+                <header role="contentinfo" className="homePage">
                     <div className="titleHolder">
 
                         <div className="center-outer">
@@ -64,22 +64,22 @@ export default class LandingPage extends React.Component {
                     </div>
                 </header>
 
-                <section>
+                <section role="contentinfo">
                     <h2>Store your favorite beers</h2>
                     <h3>"Tried" list holds your past-tried beers, along with any infortmation you would like to store with the beer.</h3>
                 </section>
 
-                <section>
+                <section role="contentinfo">
                     <h2>Analyze and view your beer-drinking habits</h2>
                     <h3>View data regarding the type of beer, style of beer, tasing notes, and ABV of your past beers.</h3>
                     <h4 className="subText">Have Craft Digest suggest a beer for you using your recent beer choices!</h4>
                 </section>
 
-                <section>
+                <section role="contentinfo">
                     <h2>Search for beers you would like to try!</h2>
                     <h3>Use our search function to scope out beers you would like to try, and preemptively add them to your list!</h3>
                 </section>
-                <section class="signUp">
+                <section class="signUp" role="menu">
                     <Link to="/signUp" style={{ textDecoration: 'none' }}>
                         <p id="signUpLinkLanding">Sign up</p>
                     </Link>

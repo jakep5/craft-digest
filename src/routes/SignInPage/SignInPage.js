@@ -38,7 +38,7 @@ export default class SignInPage extends React.Component {
                         <p id="signInLink">Sign up</p>
                     </Link>
                 </nav>
-                <div role="banner" className="signInWrapper">
+                <div role="article" className="signInWrapper">
                     <div className="signInHolder">
                         <h1 className="signIn">Sign in to Craft Digest!</h1>
 

@@ -33,7 +33,7 @@ export default class BeerTriedList extends React.Component {
         return (
             <BeerConsumer>
                 {value => (
-                    <div className ="beerTriedListHolder">
+                    <div className ="beerTriedListHolder" role="listitem">
                         {value.beers.map((beer) =>
                             <BeerListItem 
                                 key={beer.id}

@@ -9,7 +9,7 @@ export default class BeerListItem extends Component {
         return (
             <BeerConsumer>
                 {value => (
-                    <div className="beerListItemHolder gridBox">
+                    <div className="beerListItemHolder gridBox" role="listitem">
                         <h3 className="beerName">{this.props.beerName}</h3>
                         <p className="beerBrewery">Brewery: {this.props.beerBrewery}</p>
                         <p className="beerBreweryLocation">Brewery location: {this.props.beerBreweryLocation}</p>

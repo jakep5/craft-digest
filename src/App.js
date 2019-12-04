@@ -18,7 +18,6 @@ class App extends React.Component {
           <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         </head>
         <body>
-          <div className="app">
             <main className='App'>
               <Switch>
                 <Route 
@@ -53,7 +52,6 @@ class App extends React.Component {
                 />
               </Switch>
             </main>
-          </div>
         </body>
       </>
     )

@@ -48,7 +48,7 @@ export default class FavoriteBrewery extends Component {
         
 
         return (
-            <div className="favoriteBreweryHolder">
+            <div className="favoriteBreweryHolder" role="contentinfo">
                 {mostFrequent}
             </div>
         )

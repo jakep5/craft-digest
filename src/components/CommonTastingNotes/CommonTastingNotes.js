@@ -31,8 +31,6 @@ export default class CommonTastingNotes extends Component {
             freqMap[w] += 1;
         });
 
-        console.log(freqMap)
-
 
         let data  = [];
 
@@ -43,12 +41,10 @@ export default class CommonTastingNotes extends Component {
             })
         ))
 
-        console.log(data)
-
 
         return (
 
-            <div id="bubbleChart">
+            <div id="bubbleChart" role="contentinfo">
                     <MediaQuery minDeviceWidth={1000}>
                         {Object.keys(data).length >= 3 ?
                             <BubbleChart

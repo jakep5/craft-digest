@@ -33,7 +33,7 @@ export default class AverageAbv extends Component {
         return (
             <BeerConsumer>
                 {value => (
-                    <div className="averageAbvHolder">
+                    <div className="averageAbvHolder" role="contentinfo">
                         <p className="averageAbv">{avgFixed}%</p>
                     </div>
                 )}
