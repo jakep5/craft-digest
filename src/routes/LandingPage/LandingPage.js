@@ -48,7 +48,7 @@ export default class LandingPage extends React.Component {
                     <Nav />
                 </nav>
                 <header role="contentinfo" className="homePage">
-                    <div className="titleHolder">
+                    <div className="titleHolder fade-in">
 
                         <div className="center-outer">
                         <div className="center-innner">
@@ -57,10 +57,11 @@ export default class LandingPage extends React.Component {
                             <h1 className="title">Craft Digest</h1>
                         </div>
 
+                        <h2 className="title">Store, analyze, and reminisce over past beers while viewing your personalized beer trends</h2>
+
                         </div>
                         </div>
 
-                        <h2 className="title">Store, analyze, and reminisce over past beers while viewing your personalized beer trends</h2>
                     </div>
                 </header>
 

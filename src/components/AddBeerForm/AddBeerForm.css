@@ -25,6 +25,10 @@ div.addBeerHolder {
     font-weight: bolder;
 }
 
+#beerSearchForm textarea {
+    color: black;
+}
+
 textArea {
     display: inline-block;
     margin-top: 5%;
