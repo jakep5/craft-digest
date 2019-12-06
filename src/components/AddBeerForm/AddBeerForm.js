@@ -29,8 +29,8 @@ class AddBeerForm extends Component {
         }
 
         this.context.handleAddBeer(newItem)
-/*         this.props.history.push('/triedList');
- */}
+        this.props.history.push('/triedList');
+}
 
     render() {
         return (
