@@ -16,11 +16,12 @@ class BeerProvider extends React.Component {
     }
 
     handleAddBeer = (newBeer) => {
-        BeerApiServiceObject.postBeer(newBeer)
-/*         this.props.history.push('/triedList')
- */        this.setState({
+        this.setState({
             beers: [...this.state.beers, newBeer]
         })
+        BeerApiServiceObject.postBeer(newBeer)
+/*         this.props.history.push('/triedList')
+ */        
     }
 
     setUserId = (userId) => {
