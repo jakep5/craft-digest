@@ -3,13 +3,16 @@ import './AddBeerForm.css'
 import { BeerContext } from '../../contexts/BeerContext'
 import {withRouter} from 'react-router-dom'
 
+
 class AddBeerForm extends Component {
+
 
     static contextType = BeerContext;
 
     handleSubmit = (e) => {
         e.preventDefault();
 
+     
         const beerName = document.getElementById('beerName').value
         const beerBrewery = document.getElementById('beerBrewery').value
         const beerBreweryLocation = document.getElementById('beerBreweryLocation').value
@@ -29,10 +32,12 @@ class AddBeerForm extends Component {
         }
 
         this.context.handleAddBeer(newItem)
+
 /*         this.props.history.push('/triedList');
  */}
 
     render() {
+
         return (
                     <div className="addBeerHolder">
                         <form id="beerSearchForm" onSubmit={(e) => this.handleSubmit(e)} role="form">
