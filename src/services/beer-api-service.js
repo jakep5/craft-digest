@@ -38,7 +38,7 @@ const BeerApiServiceObject = {
                     ? res.json().then(e => Promise.reject(e))
                     : res.json()    
                 )
-            .then(window.location.replace('/triedList'))
+            /* .then(window.location.replace('/triedList')) */
     },
 
     deleteBeer(beerId) {
