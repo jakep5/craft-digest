@@ -28,6 +28,10 @@ button#signUpButton {
   right: 50px;
 }
 
+button#signUpButton:hover {
+  cursor: pointer;
+}
+
 p.error {
     color: red;
 }

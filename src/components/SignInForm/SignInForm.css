@@ -23,6 +23,10 @@ button#logInButton {
     font-family: 'Montserrat', sans-serif;
 }
 
+button#logInButton:hover {
+  cursor: pointer;
+}
+
 p.error {
     color: red;
 }

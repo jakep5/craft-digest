@@ -50,6 +50,10 @@ a.expandList {
   bottom: 5%;
 }
 
+a#addToList:hover {
+  cursor: pointer;
+}
+
 section {
   min-height: 200px;
   padding: 6% 0;
@@ -103,6 +107,7 @@ button#addToTried {
 
 button#addToTried:hover {
   background-color: black;
+  cursor: pointer;
 }
 
 button#addToTried:active {

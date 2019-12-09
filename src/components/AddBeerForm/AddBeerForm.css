@@ -51,6 +51,10 @@ input#submitButton {
     font-weight: lighter;
 }
 
+input#submitButton:hover {
+    cursor: pointer;
+}
+
 
 form {
     display: inline-block;

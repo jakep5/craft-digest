@@ -24,6 +24,7 @@ button.removeBeer {
 
 button.removeBeer:hover {
     background-color: black;
+    cursor: pointer;
 }
 
 p.beerRating {
