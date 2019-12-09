@@ -15,7 +15,8 @@ input#signInPassword {
 
 button#logInButton {
     position: relative;
-    top: 10px;
+    top: 30px;
+    left: 50px;
     background-color: #3B2215;
     padding: 15px 50px;
     color: white;
@@ -161,7 +162,16 @@ p.dummy {
 }
 
 div.dummy {
-    margin-top: 10%;
+    margin-top: 15%;
+}
+
+div.loadingHolder {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom: 50px;
+  right: 58px;
 }
 
 div.log-formSignIn {

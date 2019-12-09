@@ -11,7 +11,8 @@ class BeerProvider extends React.Component {
         super(props);
         this.state = {
             beers: [],
-            userId: null
+            userId: null,
+            isLoading: false
         }
     }
 
@@ -22,6 +23,12 @@ class BeerProvider extends React.Component {
         BeerApiServiceObject.postBeer(newBeer)
 /*         this.props.history.push('/triedList')
  */        
+    }
+
+    handleLoading = () => {
+        this.setState({
+            isLoading: !this.state.isLoading
+        })
     }
 
     setUserId = (userId) => {
@@ -69,7 +76,9 @@ class BeerProvider extends React.Component {
             getBeers: this.getBeers,
             userId: this.state.userId,
             setUserId: this.setUserId,
-            setNewBeers: this.setNewBeers
+            setNewBeers: this.setNewBeers,
+            isLoading: this.state.isLoading,
+            handleLoading: this.handleLoading
         }
 
         return (
