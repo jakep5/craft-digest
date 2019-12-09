@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import config from '../../config'
 import BeerTriedList from '../../components/BeerTriedList/BeerTriedList'
 import CommonTastingNotes from '../../components/CommonTastingNotes/CommonTastingNotes'
 import FavoriteBrewery from '../../components/FavoriteBrewery/FavoriteBrewery'
@@ -19,6 +20,14 @@ export default class TriedList extends React.Component {
 
     render () {
 
+        let ConditionalLink = window.sessionStorage.getItem(config.TOKEN_KEY) 
+        ?   <Link to={'/triedList'}>
+                <i class="fas fa-beer" id="beerIconSignIn" />
+            </Link>
+        :   <Link to={'/'}>
+                <i class="fas fa-beer" id="beerIconSignIn" />
+            </Link>
+
         return (
             <>
                 <nav role="navigation">
@@ -26,7 +35,7 @@ export default class TriedList extends React.Component {
                         <p id="recommendBeer">Recommend me a beer!</p>
                     </Link>
 
-                    <i class="fas fa-beer" id="beerIconSignIn"></i>
+                    {ConditionalLink}
 
                     <Link 
                         to="/" 

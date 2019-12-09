@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './SignUpPage.css'
+import config from '../../config'
 import SignUpForm  from '../../components/SignUpForm/SignUpForm'
 
 export default class SignUpPage extends React.Component {
@@ -9,6 +10,10 @@ export default class SignUpPage extends React.Component {
         history: {
             push: () => {}
         },
+    }
+
+    handleIconClick = (e) => {
+
     }
 
     handleRegistrationSuccess = user => {
@@ -21,6 +26,15 @@ export default class SignUpPage extends React.Component {
     }
 
     render() {
+
+        let ConditionalLink = window.sessionStorage.getItem(config.TOKEN_KEY) 
+            ?   <Link to={'/triedList'}>
+                    <i class="fas fa-beer" id="beerIconSignIn" />
+                </Link>
+            :   <Link to={'/'}>
+                    <i class="fas fa-beer" id="beerIconSignIn" />
+                </Link>
+
         return (
             <>
                 <nav role="navigation">
@@ -28,7 +42,7 @@ export default class SignUpPage extends React.Component {
                         <p id="returnToHome">Return to homepage</p>
                     </Link>
 
-                    <i class="fas fa-beer" id="beerIconSignIn"></i>
+                    {ConditionalLink}
 
                     <Link to="/signIn" style={{ textDecoration: 'none' }}>
                         <p id="signInLink">Sign in</p>

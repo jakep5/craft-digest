@@ -33,6 +33,10 @@ nav {
   text-align: right;
 }
 
+#beerIcon, #beerIconSignIn:hover {
+  cursor: pointer;
+}
+
 p#logOutLink {
     display: inline-block;
     margin-right: 2%;

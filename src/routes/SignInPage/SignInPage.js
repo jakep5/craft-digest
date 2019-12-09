@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { BeerContext } from '../../contexts/BeerContext'
+import config from '../../config'
 import './SignInPage.css'
 import SignInForm from '../../components/SignInForm/SignInForm'
 
@@ -25,6 +26,15 @@ export default class SignInPage extends React.Component {
     }
 
     render() {
+
+        let ConditionalLink = window.sessionStorage.getItem(config.TOKEN_KEY) 
+        ?   <Link to={'/triedList'}>
+                <i class="fas fa-beer" id="beerIconSignIn" />
+            </Link>
+        :   <Link to={'/'}>
+                <i class="fas fa-beer" id="beerIconSignIn" />
+            </Link>
+
         return (
             <>
                 <nav role="navigation">
@@ -32,7 +42,7 @@ export default class SignInPage extends React.Component {
                         <p id="returnToHome">Return to homepage</p>
                     </Link>
 
-                    <i class="fas fa-beer" id="beerIconSignIn"></i>
+                    {ConditionalLink}
 
                     <Link to="/signUp" style={{ textDecoration: 'none' }}>
                         <p id="signInLink">Sign up</p>

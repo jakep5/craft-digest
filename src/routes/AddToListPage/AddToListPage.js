@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import config from '../../config'
 import AddBeerForm from '../../components/AddBeerForm/AddBeerForm'
 import './AddToListPage.css'
 import TokenServiceObject from '../../services/token-service'
@@ -15,15 +16,28 @@ export default class AddToListPage extends Component {
     }
 
     render() {
+
+        let ConditionalLink = window.sessionStorage.getItem(config.TOKEN_KEY) 
+        ?   <Link to={'/triedList'}>
+                <i class="fas fa-beer" id="beerIconSignIn" />
+            </Link>
+        :   <Link to={'/'}>
+                <i class="fas fa-beer" id="beerIconSignIn" />
+            </Link>
+
         return (
             <div>
                 <nav role="navigation">
+
+                    {ConditionalLink}
+
                     <Link to="/" 
                         style={{ textDecoration: 'none' }}
                         onClick={this.handleLogoutClick}
                     >
                         <p class="logOut">Log out</p>
                     </Link>
+
                 </nav>
                 <header role="banner">
                     <h1 class="addBeerTitle">Add a beer to your list!</h1>
