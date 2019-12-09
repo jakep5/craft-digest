@@ -22,6 +22,12 @@ button#logInButton {
     font-family: 'Montserrat', sans-serif;
 }
 
+button#signUpButton {
+  margin-top: 80px;
+  position: relative;
+  right: 50px;
+}
+
 p.error {
     color: red;
 }
@@ -175,6 +181,15 @@ div.dummy {
 
 div.log-formSignUp {
   margin-top: 5%;
+}
+
+div.signUpLoadingHolder {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom: 85px;
+  left: 60px;
 }
   
 

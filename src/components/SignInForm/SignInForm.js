@@ -64,10 +64,7 @@ export default class SignInForm extends React.Component {
         `;
 
         let isLoading = this.state.isLoading
-
-        let testIsLoading = this.state.testIsLoading
             
-
         const { error } = this.state
 
         return (
@@ -94,7 +91,7 @@ export default class SignInForm extends React.Component {
                                         sizeUnit={"px"}
                                         size={75}
                                         color={'#808080'}
-                                        loading={testIsLoading}
+                                        loading={isLoading}
                                     />
                                 </div>
 

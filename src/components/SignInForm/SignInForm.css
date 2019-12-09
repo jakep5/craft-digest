@@ -178,7 +178,7 @@ div.log-formSignIn {
   margin-top: -3%;
 }
 
-button#logInButton {
+button#logInButton, button#signUpButton {
   padding: 15px 30px;
   background-color: #3B2215;
   border: 2px solid white;
@@ -191,11 +191,11 @@ button#logInButton {
   
 }
 
-button#logInButton:hover {
+button#logInButton:hover, button#signUpButton:hover {
   background-color: #110701;
 }
 
-button#logInButton:active {
+button#logInButton:active, button#signUpButton:active {
   box-shadow: 0 2px 0 #006599;
   transform: translateY(3px);
 }

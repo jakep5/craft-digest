@@ -1,6 +1,8 @@
 import React from 'react'
 import AuthApiServiceObject from '../../services/auth-api-service'
 import './SignUpForm.css'
+import BarLoader from 'react-spinners/BarLoader'
+import { css } from '@emotion/core'
 
 export default class SignUpForm extends React.Component {
 
@@ -9,7 +11,9 @@ export default class SignUpForm extends React.Component {
     }
 
     state = {
-        error: null
+        error: null,
+        isLoading: false
+        
     }
 
     handleRegistrationSubmit = (e) => {
@@ -18,7 +22,8 @@ export default class SignUpForm extends React.Component {
         let { user_name, password } = e.target
 
         this.setState({
-            error: null
+            error: null,
+            isLoading: true
         })
 
         AuthApiServiceObject.registerUser({
@@ -29,6 +34,9 @@ export default class SignUpForm extends React.Component {
                 user_name  = ''
                 password = ''
                 this.props.onRegistrationSuccess()
+                this.setState({
+                    isLoading: false
+                })
             })
             .catch(res => {
                 this.setState({
@@ -38,7 +46,17 @@ export default class SignUpForm extends React.Component {
     }
 
     render() {
+
+        const override = css`
+            display: block;
+            margin-top: 50%;
+            border-color: grey;
+        `;
+
         const { error } = this.state
+
+        let isLoading = this.state.isLoading
+
         return (
             <>
                 <div className="log-form log-formSignUp fade-in" role="form">
@@ -57,7 +75,17 @@ export default class SignUpForm extends React.Component {
                         <label htmlFor="signUpPassword">Password</label>
                         <input type="password" id="signUpPassword" title="password" placeholder="password" name='password' required/>
 
-                        <button type="submit" htmlFor="signInForm" class="btn" id="logInButton">Sign up</button>
+                        <div className='signUpLoadingHolder'>
+                            <BarLoader
+                                css={override}
+                                sizeUnit={"px"}
+                                size={75}
+                                color={'#808080'}
+                                loading={isLoading}
+                            />
+                        </div>
+
+                        <button type="submit" htmlFor="signInForm" class="btn signUpButton" id="signUpButton">Sign up</button>
                     
                     </form>
                 </div>
