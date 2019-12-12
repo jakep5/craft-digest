@@ -1,7 +1,7 @@
 div.beerListItemHolder {
     margin-bottom: 25%;
-    width: 88%;
-    margin-left: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
     transition: transform .2s;
 }
 
