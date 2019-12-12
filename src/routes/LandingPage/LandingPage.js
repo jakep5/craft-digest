@@ -73,12 +73,11 @@ export default class LandingPage extends React.Component {
                 <section role="contentinfo">
                     <h2>Analyze and view your beer-drinking habits</h2>
                     <h3>View data regarding the type of beer, style of beer, tasing notes, and ABV of your past beers.</h3>
-                    <h4 className="subText">Have Craft Digest suggest a beer for you using your recent beer choices!</h4>
                 </section>
 
                 <section role="contentinfo">
-                    <h2>Search for beers you would like to try!</h2>
-                    <h3>Use our search function to scope out beers you would like to try, and preemptively add them to your list!</h3>
+                    <h2>Learn more about yourself as a beer drinker!</h2>
+                    <h3>After adding a few beers, see your common tasting notes displayed in a bubble chart, view your favorite brewery, and determine your average ABV of tried beers!</h3>
                 </section>
                 <section class="signUp" role="menu">
                     <Link to="/signUp" style={{ textDecoration: 'none' }}>
