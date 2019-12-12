@@ -15,7 +15,7 @@ export default class LandingPage extends React.Component {
             var bArray = [];
             var sArray = [4,6,8,10];
 
-            for (var i = 0; i < $('.bubbles').width(); i++) {
+            for (var i = 0; i < $('.bubbles').width() + 10; i++) {
                 bArray.push(i);
             }
 
