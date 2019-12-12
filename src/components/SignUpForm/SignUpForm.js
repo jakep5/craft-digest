@@ -41,7 +41,6 @@ export default class SignUpForm extends React.Component {
                     isLoading: false
                 })
             })
-            .then(this.context.setJustSignedUp)
             .catch(res => {
                 this.setState({
                     error: res.error,

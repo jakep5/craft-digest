@@ -27,7 +27,7 @@ export default class AddToListPage extends Component {
 
         return (
             <div>
-                <nav role="navigation">
+                <nav role="navigation" className="addToListNav">
 
                     {ConditionalLink}
 

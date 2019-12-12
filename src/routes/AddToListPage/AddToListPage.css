@@ -11,9 +11,6 @@ body {
   line-height: 1.5;
 }
 
-nav.addToListNav {
-  position: absolute;
-}
 
 p.logOut {
     display: inline-block;
