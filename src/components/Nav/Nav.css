@@ -6,7 +6,7 @@ nav {
   right: 0;
   z-index: 10;
   display: block;
-  width: 99%;
+  width: calc(100% - 20px);
   height: 6%;
 }
 

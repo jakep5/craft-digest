@@ -52,7 +52,7 @@ button {
 }
 
 div.signInWrapper {
-  background-image: url("https://wallpaperplay.com/walls/full/6/f/e/326971.jpg");
+  background-image: url("https://images.alphacoders.com/741/thumb-1920-74183.jpg");
   text-align: center;
 }
 
@@ -93,6 +93,10 @@ div.dummyAccount {
   #beerIconSignIn {
     display: none !important;
   }
+
+  nav.signIn {
+    width: calc(100% - 17px)
+  }
 }
 
 @media only screen and (min-width: 640px) and (max-width: 1024px) {
@@ -101,6 +105,8 @@ div.dummyAccount {
     top: 300px;
     left: 22%;
   }
+
+  
 }
 
 @media only screen and (min-width:1024px) {
