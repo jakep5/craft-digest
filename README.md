@@ -1,68 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Craft Digest
 
-## Available Scripts
+### Link to live app
 
-In the project directory, you can run:
+craft-digest.now.sh
 
-### `npm start`
+### Technologies used
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+React.js, CSS3, Node.js, jQuery, Express, PostgreSQL, JWT authentication
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Summary
 
-### `npm test`
+This app allows users to create their own list of beers that they have tried, along with stats regarding beers in the list. Available stats currently include average ABV, favorite brewery, number of neers added, and a bubble chart of common tasting notes. Users are allowed to create their own account and store beers on their account. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Motiavtion
 
-### `npm run build`
+This app was built with the idea that many people tend to forget beers they have tried in the past. This application hopes to serve as a tool that users can reference when trying to remember a beer they have tried in the past. With this in mind, users have the ability to add various details for each beer in hopes to spark the memory of the beer as much as possible.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### App Screenshots:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Homepage:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://user-images.githubusercontent.com/53489910/70752501-a9a1b300-1d2a-11ea-9c99-6549be3ad636.png
 
-### `npm run eject`
+Beer list 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+https://user-images.githubusercontent.com/53489910/70752503-aad2e000-1d2a-11ea-8629-473445766c83.png
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Sign in form:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+https://user-images.githubusercontent.com/53489910/70752706-10bf6780-1d2b-11ea-94c3-f80059784bf3.png
