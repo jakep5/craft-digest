@@ -20,12 +20,14 @@ This app was built with the idea that many people tend to forget beers they have
 
 Homepage:
 
-https://user-images.githubusercontent.com/53489910/70752501-a9a1b300-1d2a-11ea-9c99-6549be3ad636.png
+![alt text](https://user-images.githubusercontent.com/53489910/70752501-a9a1b300-1d2a-11ea-9c99-6549be3ad636.png)
 
 Beer list 
 
-https://user-images.githubusercontent.com/53489910/70752503-aad2e000-1d2a-11ea-8629-473445766c83.png
+![alt text](https://user-images.githubusercontent.com/53489910/70752503-aad2e000-1d2a-11ea-8629-473445766c83.png)
+
 
 Sign in form:
 
-https://user-images.githubusercontent.com/53489910/70752706-10bf6780-1d2b-11ea-94c3-f80059784bf3.png
+![alt text](https://user-images.githubusercontent.com/53489910/70752706-10bf6780-1d2b-11ea-94c3-f80059784bf3.png)
+
