@@ -96,7 +96,7 @@ export default class SignInForm extends React.Component {
                                 </div>
 
                                 <div className="dummy" role="article">
-                                    <p className="dummy">Dummy account:</p>
+                                    <p className="dummy">Demo account:</p>
                                     <p className="dummy">Username: testuser</p>
                                     <p className="dummy">Password: !Testpassword1</p>
                                 </div>

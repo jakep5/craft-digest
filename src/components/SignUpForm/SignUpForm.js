@@ -40,7 +40,8 @@ export default class SignUpForm extends React.Component {
             })
             .catch(res => {
                 this.setState({
-                    error: res.error
+                    error: res.error,
+                    isLoading: false
                 })
             })
     }
@@ -86,6 +87,15 @@ export default class SignUpForm extends React.Component {
                         </div>
 
                         <button type="submit" htmlFor="signInForm" class="btn signUpButton" id="signUpButton">Sign up</button>
+
+                        <p className="passwordInfo">Passwords must meet the following criteria:</p>
+                            <ul className="passwordInfo">
+                                <li>Contain at least 8 characters</li>
+                                <li>Contain at least 1 upper case letter</li>
+                                <li>Contain at least 1 lower case letter</li>
+                                <li>Contain at least 1 number</li>
+                                <li>Contain at least 1 special character</li>
+                            </ul>
                     
                     </form>
                 </div>

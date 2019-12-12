@@ -34,7 +34,9 @@ export default class BeerTriedList extends React.Component {
             <BeerConsumer>
                 {value => (
                     <div className ="beerTriedListHolder">
-                        {value.beers.map((beer) =>
+                        {value.beers !== null
+                        ? value.beers.map((beer) =>
+
                             <BeerListItem 
                                 key={beer.id}
                                 beerName={beer.name}
@@ -45,7 +47,9 @@ export default class BeerTriedList extends React.Component {
                                 beerId={beer.id}
                                 beerRating={beer.rating}
                             />
-                        )}
+                        )
+                        : <h1 className="noBeers">Click 'Add to list +' to get started!</h1>
+                        }
                     </div>
                 )}
             </BeerConsumer>

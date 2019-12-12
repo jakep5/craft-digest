@@ -22,9 +22,8 @@ export default class BeerListItem extends Component {
                             name="rating"
                             starRatedColor="rgb(255, 255, 0)"
                         /> <p className="beerRating">{`(${this.props.beerRating})`}</p>
-                        <button className="removeBeer" onClick={() => {
-                            value.deleteBeer(this.props.beerId)
-                        }}>
+                        <button className="removeBeer" onClick={() => { if (window.confirm(`Are you sure you wish to delete ${this.props.beerName}?`)) value.deleteBeer(this.props.beerId) } }
+                        >
                             Remove beer
                         </button>
                     </div>

@@ -23,7 +23,7 @@ button#logInButton {
 }
 
 button#signUpButton {
-  margin-top: 80px;
+  margin-top: 0px;
   position: relative;
   right: 50px;
 }
@@ -34,6 +34,23 @@ button#signUpButton:hover {
 
 p.error {
     color: red;
+}
+
+p.passwordInfo {
+  color: black;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul.passwordInfo {
+  color: black;
+  margin: 0;
+}
+
+li {
+  color: black;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @font-face {
