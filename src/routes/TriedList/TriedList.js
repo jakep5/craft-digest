@@ -31,9 +31,6 @@ export default class TriedList extends React.Component {
         return (
             <>
                 <nav role="navigation">
-                    <Link to="/randomBeer" style={{ textDecoration: 'none' }}>
-                        <p id="recommendBeer">Recommend me a beer!</p>
-                    </Link>
 
                     {ConditionalLink}
 

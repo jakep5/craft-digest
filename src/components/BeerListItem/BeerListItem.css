@@ -12,7 +12,7 @@ div.beerListItemHolder:hover {
 button.removeBeer {
     padding: 5px 8px;
     display: block;
-    margin-left: calc(50% - 50px);
+    margin-left: calc(50% - 65px);
     background-color: transparent;
     font-size: 15px;
     transition-property: background;

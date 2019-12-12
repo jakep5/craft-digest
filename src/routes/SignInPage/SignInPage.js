@@ -38,7 +38,7 @@ export default class SignInPage extends React.Component {
 
         return (
             <>
-                <nav role="navigation">
+                <nav role="navigation" className="signIn">
                     <Link to="/" style={{ textDecoration: 'none' }}>
                         <p id="returnToHome">Return to homepage</p>
                     </Link>
