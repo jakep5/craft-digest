@@ -4,6 +4,10 @@
 
 craft-digest.now.sh
 
+### Link to API docs/server code
+
+https://github.com/jakep5/craft-digest-api
+
 ### Technologies used
 
 React.js, CSS3, Node.js, jQuery, Express, PostgreSQL, JWT authentication
