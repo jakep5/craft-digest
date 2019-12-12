@@ -18,6 +18,7 @@ export default class SignInPage extends React.Component {
 
     handleLoginSuccess = () => {
         const { history } = this.props
+        this.context.setJustSignedUp();
         history.push('/triedList')
     }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './SignUpPage.css'
+import BeerContext from '../../contexts/BeerContext'
 import config from '../../config'
 import SignUpForm  from '../../components/SignUpForm/SignUpForm'
 
@@ -12,12 +13,11 @@ export default class SignUpPage extends React.Component {
         },
     }
 
-    handleIconClick = (e) => {
-
-    }
+    static contextType = BeerContext;
 
     handleRegistrationSuccess = user => {
         const { history } = this.props
+/*         this.context.setJustSignedUp() */
         history.push('/signIn')
     }
 

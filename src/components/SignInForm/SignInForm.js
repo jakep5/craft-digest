@@ -78,6 +78,8 @@ export default class SignInForm extends React.Component {
                                 {error && <p className='red'>{error}</p>}
                                 </div>
 
+                                {this.context.justSignedUp && <p className="justSignedUp">Thanks for signing up! Please log in:</p>}
+
                                 <label htmlFor="signInUsername">Username</label>
                                 <input type="text" id="signInUsername" title="username" placeholder="username" name='user_name' required/>
 

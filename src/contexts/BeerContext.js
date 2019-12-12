@@ -12,7 +12,8 @@ class BeerProvider extends React.Component {
         this.state = {
             beers: [],
             userId: null,
-            isLoading: false
+            isLoading: false,
+            justSignedUp: false
         }
     }
 
@@ -65,6 +66,12 @@ class BeerProvider extends React.Component {
             beers
         })
     }
+
+    setJustSignedUp = () => {
+        this.setState({
+            justSignedUp: true
+        })
+    }
     
     render() {
 
@@ -78,7 +85,9 @@ class BeerProvider extends React.Component {
             setUserId: this.setUserId,
             setNewBeers: this.setNewBeers,
             isLoading: this.state.isLoading,
-            handleLoading: this.handleLoading
+            handleLoading: this.handleLoading,
+            setJustSignedUp: this.setJustSignedUp,
+            justSignedUp: this.state.justSignedUp
         }
 
         return (

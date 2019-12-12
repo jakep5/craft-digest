@@ -1,6 +1,7 @@
 import React from 'react'
 import AuthApiServiceObject from '../../services/auth-api-service'
 import './SignUpForm.css'
+import BeerContext from '../../contexts/BeerContext'
 import BarLoader from 'react-spinners/BarLoader'
 import { css } from '@emotion/core'
 
@@ -9,6 +10,8 @@ export default class SignUpForm extends React.Component {
     static defaultProps = {
         onRegistrationSuccess: () => {}
     }
+
+    static contextType = BeerContext;
 
     state = {
         error: null,
@@ -38,6 +41,7 @@ export default class SignUpForm extends React.Component {
                     isLoading: false
                 })
             })
+            .then(this.context.setJustSignedUp)
             .catch(res => {
                 this.setState({
                     error: res.error,
