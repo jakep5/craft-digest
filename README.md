@@ -22,7 +22,7 @@ Homepage:
 
 ![alt text](https://user-images.githubusercontent.com/53489910/70752501-a9a1b300-1d2a-11ea-9c99-6549be3ad636.png)
 
-Beer list 
+Beer list:
 
 ![alt text](https://user-images.githubusercontent.com/53489910/70752503-aad2e000-1d2a-11ea-8629-473445766c83.png)
 
