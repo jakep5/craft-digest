@@ -9,7 +9,16 @@ export default class LoadingSpinner extends Component {
 
    static contextType = BeerContext
 
+   
+
     render() {
+
+        const override = css`
+            display: block;
+            margin-top: 50%;
+            border-color: grey;
+        `;
+
         return (
             <BeerConsumer>
                 {value => (

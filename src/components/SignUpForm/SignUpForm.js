@@ -91,7 +91,7 @@ export default class SignUpForm extends React.Component {
                             />
                         </div>
 
-                        <button type="submit" htmlFor="signInForm" class="btn signUpButton" id="signUpButton">Sign up</button>
+                        <button type="submit" htmlFor="signInForm" className="btn signUpButton" id="signUpButton">Sign up</button>
 
                         <p className="passwordInfo">Passwords must meet the following criteria:</p>
                             <ul className="passwordInfo">

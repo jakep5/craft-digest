@@ -1,4 +1,4 @@
-let exampleBeers = [
+let testBeersArray = [
     {
         "id": 1,
         "name": "Spotted Cow",
@@ -56,5 +56,9 @@ let exampleBeers = [
     }
 ]
 
+let TestObject = {
+    beers: testBeersArray,
+    isLoading: true
+}
 
-module.exports = exampleBeers
+module.exports = TestObject

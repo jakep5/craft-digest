@@ -61,22 +61,21 @@ section {
 }
 
 section#section1 {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a.expandList {
-    position: relative;
-    top: 75px;
+  position: relative;
+  top: 75px;
 }
 
 h1.triedList {
-    margin-top: 5%;
-    font-family: 'Lora', serif; 
-    font-style: italic;
-    font-weight: lighter;
+  margin-top: 5%;
+  font-family: 'Lora', serif; 
+  font-style: italic;
+  font-weight: lighter;
 }
 
 h1.synopsis {
@@ -88,7 +87,7 @@ h1.synopsis {
 }
 
 h3.beerList {
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 button#addToTried {

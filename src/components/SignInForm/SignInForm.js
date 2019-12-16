@@ -83,7 +83,7 @@ export default class SignInForm extends React.Component {
                         <label htmlFor="signInPassword">Password</label>
                         <input type="password" id="signInPassword" title="password" placeholder="password" name='password' required/>
 
-                        <button type="submit" htmlFor="signInForm" class="signInButton" id="logInButton">Sign in</button>
+                        <button type="submit" htmlFor="signInForm" className="signInButton" id="logInButton">Sign in</button>
                         <div className='loadingHolder'>
                             <BarLoader
                                 css={override}

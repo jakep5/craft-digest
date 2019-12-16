@@ -42,25 +42,25 @@ class AddBeerForm extends Component {
                 <form id="beerSearchForm" onSubmit={(e) => this.handleSubmit(e)} role="form">
                         <legend className="formLegend">Add a beer:</legend>
 
-                        <label for="beerName" required>Name of beer:</label>
+                        <label htmlFor="beerName" required>Name of beer:</label>
                         <input type="text" className="beerName beerInputField" id="beerName"/>
 
-                        <label for="beerBrewery" required>Brewery:</label>
+                        <label htmlFor="beerBrewery" required>Brewery:</label>
                         <input type="text" className="breweryName beerInputField" id="beerBrewery"/>
 
-                        <label for="beerBreweryLocation" >Brewery location:</label>
+                        <label htmlFor="beerBreweryLocation" >Brewery location:</label>
                         <input type="text" className="breweryLocation beerInputField" id="beerBreweryLocation" />
 
-                        <label for="beerTastingNotes" id="tastingNotes" required>Tasting notes:</label>
+                        <label htmlFor="beerTastingNotes" id="tastingNotes" required>Tasting notes:</label>
                         <textarea type="text" className="tastingNotes beerInputField" id="beerTastingNotes"/>
 
-                        <label for="beerAbv" required>ABV:</label>
+                        <label htmlFor="beerAbv" required>ABV:</label>
                         <input type="number" className="abvInput beerInputField" id="beerAbv" step=".01"/>
 
-                        <label for="beerRating" required>Rating (out of 5):</label>
+                        <label htmlFor="beerRating" required>Rating (out of 5):</label>
                         <input type="number" className="ratingInput beerInputField" id="beerRating" step=".01" max="5"/>
 
-                        <label for="submitButton" required>{null}</label>
+                        <label htmlFor="submitButton" required>{null}</label>
                         <input type="submit" value="Add beer" id="submitButton" />
 
                 </form>
