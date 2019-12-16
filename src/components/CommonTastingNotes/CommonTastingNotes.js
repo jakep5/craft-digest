@@ -16,14 +16,16 @@ export default class CommonTastingNotes extends Component {
             tastingNotesArray.push(beer.tasting_notes)
         })
 
+        //Joins tasting notes array entries and removes commas separating the entries
         let tastingNotesArrayJoin = tastingNotesArray.join(" ")
         let tastingNotesFinal = tastingNotesArrayJoin.replace(/[, ]+/g, " ").trim();
         let tastingNotesLowerCase = tastingNotesFinal.toLowerCase();
-
-                
-
+       
+        //Ensures there are spaces between the tasting notes entries
         let words = tastingNotesLowerCase.replace(/[.]/g, '').split(/\s/);
         let freqMap = {};
+
+        //Retrieves frequency of each value in tasting notes array
         words.forEach(function(w) {
             if (!freqMap[w]) {
                 freqMap[w] = 0;
@@ -31,9 +33,9 @@ export default class CommonTastingNotes extends Component {
             freqMap[w] += 1;
         });
 
-
         let data  = [];
 
+        //Creates required object structure for the bubble chart data value
         Object.keys(freqMap).map((word, i) => (
             data.push({
                 "label": Object.keys(freqMap)[i],
@@ -41,11 +43,12 @@ export default class CommonTastingNotes extends Component {
             })
         ))
 
-
         return (
 
             <div id="bubbleChart" role="contentinfo">
                     <MediaQuery minDeviceWidth={1000}>
+
+                        {/* Only renders bubble chart if there are at least 3 tasting note entries */}
                         {Object.keys(data).length >= 3 ?
                             <BubbleChart
                             graph= {{
@@ -53,11 +56,10 @@ export default class CommonTastingNotes extends Component {
                                 offsetX: -0.00,
                                 offsetY: -0.01,
                             }}
-        /*                     width={1000}
-        */                    height={800}
-                            padding={0} // optional value, number that set the padding between bubbles
-                            showLegend={true} // optional value, pass false to disable the legend.
-                            legendPercentage={20} // number that represent the % of with that legend going to use.
+                            height={800}
+                            padding={0} 
+                            showLegend={true} 
+                            legendPercentage={20} 
                             legendFont={{
                                     family: 'Arial',
                                     size: 12,
@@ -76,7 +78,6 @@ export default class CommonTastingNotes extends Component {
                                     color: '#fff',
                                     weight: 'bold',
                                 }}
-                            //Custom bubble/legend click functions such as searching using the label, redirecting to other page
                             data={data}
                         />
 

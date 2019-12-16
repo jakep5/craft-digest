@@ -1,5 +1,3 @@
-
-
 nav {
     position: fixed;
     top: 0;
@@ -25,7 +23,6 @@ html, body, .signUpWrapper {
   margin: 0;
 }
 
-
 main.App {
   height: 100%;
 }
@@ -33,7 +30,6 @@ main.App {
 div.app {
   height: 100%;
 }
-
 
 form {
   position: relative;
@@ -69,7 +65,6 @@ p#signInLink {
 div.signUpWrapper {
   background-image: url("https://images.alphacoders.com/741/thumb-1920-74183.jpg");
 }
-
 
 div.dummyAccount {
   margin-top: 20%;

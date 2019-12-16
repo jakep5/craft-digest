@@ -7,7 +7,6 @@ div.app {
   width: 100%;
 }
 
-
 body {
   font-family: "Open Sans",
   sans-serif; 
@@ -21,8 +20,6 @@ header.triedList {
   padding: 15% 0;
   background-image: url("https://images.alphacoders.com/741/thumb-1920-74183.jpg")
 }
-
-
 
 nav {
   position: fixed;
@@ -94,8 +91,6 @@ h3.beerList {
     margin-bottom: 2%;
 }
 
-
-
 button#addToTried {
   padding: 15px 30px;
   background-color: transparent;
@@ -150,11 +145,6 @@ button#addToTried:active {
   div.tastingNotes {
     margin-top: 7%;
   }
-
-
-    
-  
-
 }
 
   

@@ -17,7 +17,7 @@ export default class BeerTriedList extends React.Component {
         this.context.setUserId(userId)
     }
 
-
+    //Retrieves user id value from currently-logged JWT
     parseJwt = (token) => {
         let base64Url = token.split('.')[1];
         let base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
@@ -36,7 +36,6 @@ export default class BeerTriedList extends React.Component {
                     <div className ="beerTriedListHolder">
                         {value.beers !== null
                         ? value.beers.map((beer) =>
-
                             <BeerListItem 
                                 key={beer.id}
                                 beerName={beer.name}

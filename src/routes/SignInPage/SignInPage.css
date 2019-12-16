@@ -25,7 +25,6 @@ html, body, .signInWrapper {
   margin: 0;
 }
 
-
 main.App {
   height: 100%;
 }
@@ -33,7 +32,6 @@ main.App {
 div.app {
   height: 100%;
 }
-
 
 form {
   position: relative;
@@ -64,7 +62,6 @@ div.signInHolder {
 div.log-form {
   display: inline-block;
 }
-
 
 p#signInLink {
     display: inline-block;

@@ -30,10 +30,6 @@ const AuthApiServiceObject = {
                     : res.json()
             )
     },
-
-    getUserId() {
-
-    }
 }
 
 export default AuthApiServiceObject

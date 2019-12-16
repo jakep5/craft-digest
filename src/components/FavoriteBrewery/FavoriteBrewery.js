@@ -6,6 +6,7 @@ export default class FavoriteBrewery extends Component {
 
     static contextType = BeerContext;
 
+    //Determines if user has at least two of the same brweries, otherwise 
     hasDuplicates = (breweryArray) => {
         var valuesSoFar = Object.create(null);
         for (var i = 0; i < breweryArray.length; ++i) {
@@ -28,6 +29,7 @@ export default class FavoriteBrewery extends Component {
             breweryArray.push(beer.brewery_name)
         })
 
+        //Renders warning/informational message if hasDuplicates function from above returns false
         if (this.hasDuplicates(breweryArray)) {
             function mode(breweryArray) {
                 return breweryArray.sort((a, b) => 
@@ -43,10 +45,7 @@ export default class FavoriteBrewery extends Component {
 
             mostFrequent = 'You must have at least 2 beers from the same brewery to have a favorite brewery'
         }
-
-        
-        
-
+       
         return (
             <div className="favoriteBreweryHolder" role="contentinfo">
                 {mostFrequent}

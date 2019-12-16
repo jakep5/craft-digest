@@ -17,6 +17,7 @@ export default class AddToListPage extends Component {
 
     render() {
 
+        //Changes beer icon link destination depending on if user is logged in or not
         let ConditionalLink = window.sessionStorage.getItem(config.TOKEN_KEY) 
         ?   <Link to={'/triedList'}>
                 <i class="fas fa-beer" id="beerIconSignIn" />
@@ -39,22 +40,23 @@ export default class AddToListPage extends Component {
                     </Link>
 
                 </nav>
+
                 <header role="banner">
                     <h1 class="addBeerTitle">Add a beer to your list!</h1>
                 </header>
+
                 <section className="addBeerSection">
                     <div className="addBeerSearchFormHolder">
                         <AddBeerForm />
                     </div>
-                    {/* <div className="AddBeerSearchResultsHolder">
-                        <AddBeerSearchResults handleSubmit={this.handleSubmit}/>
-                    </div> */}
                 </section>
+
                 <footer role="button">
                     <Link to="/triedList" style={{ textDecoration: 'none' }}>
                         <p>Return to tried list</p>
                     </Link>
                 </footer>
+                
             </div>
         )
     }

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 input#signUpUsername {
     margin-left: 1%;
     position: relative;
@@ -10,8 +14,6 @@ input#signUpPassword {
     position: relative;
     left: 5%;
 }
-
-
 
 button#logInButton {
     position: relative;
@@ -83,9 +85,7 @@ li {
   font-weight: 700;
   src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMQg.ttf) format('truetype');
 }
-* {
-  box-sizing: border-box;
-}
+
 body {
   font-family: 'open sans', helvetica, arial, sans;
   background: no-repeat center center fixed;
@@ -94,6 +94,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
 .log-form {
   width: 40%;
   min-width: 320px;
@@ -124,11 +125,13 @@ body {
          box-shadow: 0 10px 6px -6px rgb(39, 39, 39);
   }
 }
+
 .log-form form {
   display: block;
   width: 100%;
   padding: 2em;
 }
+
 .log-form h2 {
   color: #5d5d5d;
   font-family: 'open sans condensed';
@@ -143,6 +146,7 @@ body {
   margin: 0;
   font-weight: 200;
 }
+
 .log-form input {
   display: block;
   margin: auto auto;
@@ -156,25 +160,31 @@ body {
   padding-bottom: 1.25em;
   color: black;
 }
+
 .log-form input:focus {
   outline: none;
 }
+
 .log-form .btn {
   display: inline-block;
   padding: 0.5em 2em;
   color: white;
   margin-right: 0.5em;
 }
+
 .log-form .btn:hover {
   background: #23cad5;
 }
+
 .log-form .btn:active {
   background: #1fb5bf;
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
+
 .log-form .btn:focus {
   outline: none;
 }
+
 .log-form .forgot {
   color: #33d3de;
   line-height: 0.5em;
@@ -186,6 +196,7 @@ body {
   padding: 0;
   float: right;
 }
+
 .log-form .forgot:hover {
   color: #1ba0a9;
 }

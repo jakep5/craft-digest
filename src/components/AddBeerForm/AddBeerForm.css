@@ -32,6 +32,8 @@ div.addBeerHolder {
 textArea {
     display: inline-block;
     margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
 }
 textarea#beerTastingNotes {
     height: 100px;
@@ -54,7 +56,6 @@ input#submitButton {
 input#submitButton:hover {
     cursor: pointer;
 }
-
 
 form {
     display: inline-block;

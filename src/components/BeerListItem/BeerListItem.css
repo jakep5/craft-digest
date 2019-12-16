@@ -5,9 +5,11 @@ div.beerListItemHolder {
     transition: transform .2s;
 }
 
+/* Magnify beer list item on hover */
 div.beerListItemHolder:hover {
     transform: scale(1.25);
 }
+/**/
 
 button.removeBeer {
     padding: 5px 8px;

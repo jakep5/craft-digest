@@ -9,7 +9,7 @@ export default class LandingPage extends React.Component {
     componentDidMount() {
         document.title = "Craft Digest Home Page"
 
-        //bubble text effect
+        //Title bubble text effect
         jQuery(document).ready(function($){
 
             var bArray = [];
@@ -18,8 +18,7 @@ export default class LandingPage extends React.Component {
             for (var i = 0; i < $('.bubbles').width() + 10; i++) {
                 bArray.push(i);
             }
-
-            
+ 
             function randomValue(arr) {
                 return arr[Math.floor(Math.random() * arr.length)];
             }
@@ -47,22 +46,21 @@ export default class LandingPage extends React.Component {
                 <nav role="navigation">
                     <Nav />
                 </nav>
+
                 <header role="contentinfo" className="homePage">
+
                     <div className="titleHolder fade-in">
-
+                        {/* Div elements to create bubble effect */}
                         <div className="center-outer">
-                        <div className="center-innner">
-
-                        <div className="bubbles">
-                            <h1 className="title">Craft Digest</h1>
+                            <div className="center-innner">
+                                <div className="bubbles">
+                                    <h1 className="title">Craft Digest</h1>
+                                </div>
+                                <h2 className="title">Store, analyze, and reminisce over past beers while viewing your personalized beer trends</h2>
+                            </div>
                         </div>
-
-                        <h2 className="title">Store, analyze, and reminisce over past beers while viewing your personalized beer trends</h2>
-
-                        </div>
-                        </div>
-
                     </div>
+
                 </header>
 
                 <section role="contentinfo">
@@ -79,7 +77,8 @@ export default class LandingPage extends React.Component {
                     <h2>Learn more about yourself as a beer drinker!</h2>
                     <h3>After adding a few beers, see your common tasting notes displayed in a bubble chart, view your favorite brewery, and determine your average ABV of tried beers!</h3>
                 </section>
-                <section class="signUp" role="menu">
+
+                <section className="signUp" role="menu">
                     <Link to="/signUp" style={{ textDecoration: 'none' }}>
                         <p id="signUpLinkLanding">Sign up</p>
                     </Link>
@@ -88,6 +87,7 @@ export default class LandingPage extends React.Component {
                         <p id="signInLinkLanding">Sign in</p>
                     </Link>
                 </section>
+
             </>
         )
     }

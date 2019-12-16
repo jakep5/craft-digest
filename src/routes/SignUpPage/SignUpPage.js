@@ -27,6 +27,7 @@ export default class SignUpPage extends React.Component {
 
     render() {
 
+        //Changes beer icon link destination depending on if user is logged in or not
         let ConditionalLink = window.sessionStorage.getItem(config.TOKEN_KEY) 
             ?   <Link to={'/triedList'}>
                     <i class="fas fa-beer" id="beerIconSignIn" />

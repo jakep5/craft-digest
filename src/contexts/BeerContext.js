@@ -49,7 +49,6 @@ class BeerProvider extends React.Component {
 
     }
 
-
     handleLogIn = () => {
         this.setState({
             mustLogIn: false

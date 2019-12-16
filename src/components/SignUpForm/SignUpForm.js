@@ -51,6 +51,8 @@ export default class SignUpForm extends React.Component {
 
     render() {
 
+
+        //CSS object for loading bar animation
         const override = css`
             display: block;
             margin-top: 50%;

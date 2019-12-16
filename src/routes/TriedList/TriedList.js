@@ -20,6 +20,7 @@ export default class TriedList extends React.Component {
 
     render () {
 
+        //Changes beer icon link destination depending on if user is logged in or not
         let ConditionalLink = window.sessionStorage.getItem(config.TOKEN_KEY) 
         ?   <Link to={'/triedList'}>
                 <i class="fas fa-beer" id="beerIconSignIn" />
@@ -55,7 +56,6 @@ export default class TriedList extends React.Component {
 
                 <section role="contentinfo">
                     <h1 className="synopsis">Your beer synopsis:</h1>
-
 
                     <div className="statWrapper">
                         <div className="statItem">
