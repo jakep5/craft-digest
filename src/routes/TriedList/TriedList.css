@@ -118,6 +118,10 @@ button#addToTried:active {
   p.expandList {
     top: 40px;
   }
+
+  nav.triedListNav {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {

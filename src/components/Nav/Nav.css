@@ -34,10 +34,18 @@ nav {
   top: 35%;
 }
 
+nav.landingNav {
+  width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   #beerIcon {
     font-size: 35px;
     top: 20%;
+  }
+
+  nav.landingNav {
+    width: calc(100% - 17px)
   }
 }
 

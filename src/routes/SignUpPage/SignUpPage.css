@@ -54,6 +54,8 @@ header.signIn {
 h1.signUp {
   position: relative;
   top: 4%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 p#signInLink {
@@ -75,6 +77,8 @@ div.dummyAccount {
     position: absolute;
     top: 12%;
     right: 360px;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   div.signUpWrapper {

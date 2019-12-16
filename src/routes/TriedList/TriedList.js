@@ -31,7 +31,7 @@ export default class TriedList extends React.Component {
 
         return (
             <>
-                <nav role="navigation">
+                <nav role="navigation" className="triedListNav">
 
                     {ConditionalLink}
 

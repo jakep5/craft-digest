@@ -11,7 +11,6 @@ body {
   line-height: 1.5;
 }
 
-
 p.logOut {
     display: inline-block;
     margin-right: 2%;
@@ -36,8 +35,6 @@ section.addBeerSection {
     text-align: center;
 }
 
-
-
 form#beerSearchForm {
     margin-top: -5%;
 }
@@ -50,9 +47,17 @@ h3.beerItem {
     margin-top: 5%;
 }
 
-@media only screen and (min-width: 640px) {
-  h1.addBeerTitle {
-    margin-top: 7%;
-    font-size: 50px;
+nav.addToListNav {
+    width: 100%;
 }
+
+@media only screen and (min-width: 640px) {
+    h1.addBeerTitle {
+        margin-top: 7%;
+        font-size: 50px;
+    }
+
+    nav.addToListNav {
+        width: calc(100% - 17px)
+    }
 }
