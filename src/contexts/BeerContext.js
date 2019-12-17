@@ -14,40 +14,40 @@ class BeerProvider extends React.Component {
             userId: null,
             isLoading: false,
             justSignedUp: false
-        }
-    }
+        };
+    };
 
     handleAddBeer = (newBeer) => {
         this.setState({
             beers: [...this.state.beers, newBeer]
-        })
-        BeerApiServiceObject.postBeer(newBeer)
+        });
+        BeerApiServiceObject.postBeer(newBeer);
 /*         this.props.history.push('/triedList')
  */        
-    }
+    };
 
     handleLoading = () => {
         this.setState({
             isLoading: !this.state.isLoading
-        })
-    }
+        });
+    };
 
     setUserId = (userId) => {
         this.setState({
             userId: userId
-        })
-        this.getBeers(userId)
-    }
+        });
+        this.getBeers(userId);
+    };
 
     deleteBeer = (beerId) => {
         const afterDeleteBeers = this.state.beers.filter(br =>
-            br.id !== beerId)
+            br.id !== beerId);
         this.setState({
             beers: afterDeleteBeers
-        })
-        BeerApiServiceObject.deleteBeer(beerId)
+        });
+        BeerApiServiceObject.deleteBeer(beerId);
 
-    }
+    };
 
     handleLogIn = () => {
         this.setState({
@@ -58,19 +58,19 @@ class BeerProvider extends React.Component {
     getBeers = (userId) => {
         BeerApiServiceObject.getBeers(userId)
             .then(beers => this.setNewBeers(beers))
-    }
+    };
 
     setNewBeers = (beers) => {
         this.setState({
             beers
-        })
-    }
+        });
+    };
 
     setJustSignedUp = () => {
         this.setState({
             justSignedUp: true
-        })
-    }
+        });
+    };
     
     render() {
 
@@ -87,7 +87,7 @@ class BeerProvider extends React.Component {
             handleLoading: this.handleLoading,
             setJustSignedUp: this.setJustSignedUp,
             justSignedUp: this.state.justSignedUp
-        }
+        };
 
         return (
             <BeerContext.Provider

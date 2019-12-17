@@ -7,7 +7,7 @@ import ClipLoader from 'react-spinners/ClipLoader'
 
 export default class LoadingSpinner extends Component {
 
-   static contextType = BeerContext
+   static contextType = BeerContext;
 
    
 

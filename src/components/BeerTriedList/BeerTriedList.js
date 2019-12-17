@@ -11,11 +11,11 @@ export default class BeerTriedList extends React.Component {
     static contextType = BeerContext;
     
     componentDidMount = () => {
-        const token = sessionStorage.getItem('craft-digest-token-key')
-        let payload = this.parseJwt(token)
-        let userId = payload.user_id
-        this.context.setUserId(userId)
-    }
+        const token = sessionStorage.getItem('craft-digest-token-key');
+        let payload = this.parseJwt(token);
+        let userId = payload.user_id;
+        this.context.setUserId(userId);
+    };
 
     //Retrieves user id value from currently-logged JWT
     parseJwt = (token) => {
@@ -25,7 +25,7 @@ export default class BeerTriedList extends React.Component {
             return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
         }).join(''));
 
-        return JSON.parse(jsonPayload)
+        return JSON.parse(jsonPayload);
     }
 
     render() {

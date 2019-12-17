@@ -9,25 +9,24 @@ export default class SignUpForm extends React.Component {
 
     static defaultProps = {
         onRegistrationSuccess: () => {}
-    }
+    };
 
     static contextType = BeerContext;
 
     state = {
         error: null,
         isLoading: false
-        
-    }
+    };
 
     handleRegistrationSubmit = (e) => {
-        e.preventDefault()
+        e.preventDefault();
         
-        let { user_name, password } = e.target
+        let { user_name, password } = e.target;
 
         this.setState({
             error: null,
             isLoading: true
-        })
+        });
 
         AuthApiServiceObject.registerUser({
             user_name: user_name.value,
@@ -47,7 +46,7 @@ export default class SignUpForm extends React.Component {
                     isLoading: false
                 })
             })
-    }
+    };
 
     render() {
 
@@ -59,9 +58,9 @@ export default class SignUpForm extends React.Component {
             border-color: grey;
         `;
 
-        const { error } = this.state
+        const { error } = this.state;
 
-        let isLoading = this.state.isLoading
+        let isLoading = this.state.isLoading;
 
         return (
             <>
