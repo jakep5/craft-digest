@@ -8,11 +8,11 @@ import TokenServiceObject from '../../services/token-service'
 export default class AddToListPage extends Component {
 
     handleLogoutClick = () => {
-        TokenServiceObject.clearAuthToken()
+        TokenServiceObject.clearAuthToken();
     }
 
     componentDidMount() {
-        document.title = "Add Beer To Tried List"
+        document.title = "Add Beer To Tried List";
     }
 
     render() {

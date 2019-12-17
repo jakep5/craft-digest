@@ -12,18 +12,18 @@ export default class SignInPage extends React.Component {
         history: {
             push: () => {},
         },
-    }
+    };
 
-    static contextType = BeerContext
+    static contextType = BeerContext;
 
     handleLoginSuccess = () => {
-        const { history } = this.props
+        const { history } = this.props;
         this.context.setJustSignedUp();
-        history.push('/triedList')
+        history.push('/triedList');
     }
 
     componentDidMount() {
-        document.title = "Sign In Page"
+        document.title = "Sign In Page";
     }
 
     render() {

@@ -11,17 +11,17 @@ import TokenServiceObject from '../../services/token-service'
 
 export default class TriedList extends React.Component {
     handleLogoutClick = () => {
-        TokenServiceObject.clearAuthToken()
+        TokenServiceObject.clearAuthToken();
     }
 
     componentDidMount() {
-        document.title = "Craft Digest Tried List"
+        document.title = "Craft Digest Tried List";
     }
 
     render () {
 
         //Changes beer icon link destination depending on if user is logged in or not
-        let ConditionalLink = window.sessionStorage.getItem(config.TOKEN_KEY) 
+        let ConditionalLink = window.sessionStorage.getItem(config.TOKEN_KEY)
         ?   <Link to={'/triedList'}>
                 <i class="fas fa-beer" id="beerIconSignIn" />
             </Link>

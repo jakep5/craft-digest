@@ -16,13 +16,13 @@ export default class SignUpPage extends React.Component {
     static contextType = BeerContext;
 
     handleRegistrationSuccess = user => {
-        const { history } = this.props
+        const { history } = this.props;
 /*         this.context.setJustSignedUp() */
-        history.push('/signIn')
+        history.push('/signIn');
     }
 
     componentDidMount() {
-        document.title = "Sign Up Page"
+        document.title = "Sign Up Page";
     }
 
     render() {

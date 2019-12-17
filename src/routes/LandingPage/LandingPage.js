@@ -7,7 +7,7 @@ import jQuery from "jquery"
 export default class LandingPage extends React.Component {
 
     componentDidMount() {
-        document.title = "Craft Digest Home Page"
+        document.title = "Craft Digest Home Page";
 
         //Title bubble text effect
         jQuery(document).ready(function($){
