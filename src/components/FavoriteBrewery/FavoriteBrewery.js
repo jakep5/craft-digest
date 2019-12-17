@@ -15,7 +15,7 @@ export default class FavoriteBrewery extends Component {
                 return true;
             }
             valuesSoFar[value] = true;
-        }
+        };
         return false;
     }
 
@@ -23,11 +23,11 @@ export default class FavoriteBrewery extends Component {
 
         let breweryArray = [];
 
-        let mostFrequent
+        let mostFrequent;
 
         this.context.beers.forEach(beer => {
             breweryArray.push(beer.brewery_name)
-        })
+        });
 
         //Renders warning/informational message if hasDuplicates function from above returns false
         if (this.hasDuplicates(breweryArray)) {
@@ -38,12 +38,12 @@ export default class FavoriteBrewery extends Component {
                 ).pop();
             }
 
-            let mostFrequent = mode(breweryArray)
+            let mostFrequent = mode(breweryArray);
 
-            return mostFrequent
+            return mostFrequent;
         } else {
 
-            mostFrequent = 'You must have at least 2 beers from the same brewery to have a favorite brewery'
+            mostFrequent = 'You must have at least 2 beers from the same brewery to have a favorite brewery';
         }
        
         return (

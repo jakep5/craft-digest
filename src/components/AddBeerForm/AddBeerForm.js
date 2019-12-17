@@ -13,12 +13,12 @@ class AddBeerForm extends Component {
         e.preventDefault();
 
      
-        const beerName = document.getElementById('beerName').value
-        const beerBrewery = document.getElementById('beerBrewery').value
-        const beerBreweryLocation = document.getElementById('beerBreweryLocation').value
-        const beerTastingNotes = document.getElementById('beerTastingNotes').value
-        const beerAbv = parseFloat(document.getElementById('beerAbv').value)
-        const beerRating = parseFloat(document.getElementById('beerRating').value)
+        const beerName = document.getElementById('beerName').value;
+        const beerBrewery = document.getElementById('beerBrewery').value;
+        const beerBreweryLocation = document.getElementById('beerBreweryLocation').value;
+        const beerTastingNotes = document.getElementById('beerTastingNotes').value;
+        const beerAbv = parseFloat(document.getElementById('beerAbv').value);
+        const beerRating = parseFloat(document.getElementById('beerRating').value);
 
 
         const newItem = { 
@@ -29,9 +29,9 @@ class AddBeerForm extends Component {
             "abv": beerAbv,
             "rating": beerRating,
             "user_id": this.context.userId
-        }
+        };
 
-        this.context.handleAddBeer(newItem)
+        this.context.handleAddBeer(newItem);
 
     }
 

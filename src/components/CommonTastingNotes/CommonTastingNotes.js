@@ -14,10 +14,10 @@ export default class CommonTastingNotes extends Component {
 
         this.context.beers.forEach(beer => {
             tastingNotesArray.push(beer.tasting_notes)
-        })
+        });
 
         //Joins tasting notes array entries and removes commas separating the entries
-        let tastingNotesArrayJoin = tastingNotesArray.join(" ")
+        let tastingNotesArrayJoin = tastingNotesArray.join(" ");
         let tastingNotesFinal = tastingNotesArrayJoin.replace(/[, ]+/g, " ").trim();
         let tastingNotesLowerCase = tastingNotesFinal.toLowerCase();
        
@@ -41,7 +41,7 @@ export default class CommonTastingNotes extends Component {
                 "label": Object.keys(freqMap)[i],
                 "value": Object.values(freqMap)[i]
             })
-        ))
+        ));
 
         return (
 

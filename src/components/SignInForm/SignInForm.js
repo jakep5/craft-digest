@@ -10,13 +10,13 @@ export default class SignInForm extends React.Component {
 
     static defaultProps = {
         onLoginSuccess: () => {} 
-    }
+    };
 
     state = {
         error: null,
         isLoading: false,
         testIsLoading: true
-    }
+    };
 
     static contextType = BeerContext;
 
@@ -28,7 +28,7 @@ export default class SignInForm extends React.Component {
             isLoading: true
         });
         
-        let { user_name, password } = e.target
+        let { user_name, password } = e.target;
 
         AuthApiServiceObject.logIn({
             user_name: user_name.value,
@@ -60,9 +60,9 @@ export default class SignInForm extends React.Component {
             border-color: grey;
         `;
 
-        let isLoading = this.state.isLoading
+        let isLoading = this.state.isLoading;
             
-        const { error } = this.state
+        const { error } = this.state;
 
         return (
             <>

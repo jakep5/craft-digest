@@ -9,22 +9,22 @@ export default class AverageAbv extends Component {
 
     render() {
 
-        let averageAbv = []
+        let averageAbv = [];
 
-        let avgFixed
+        let avgFixed;
 
         this.context.beers.map(beer =>
             averageAbv.push(beer.abv)    
-        )
+        );
 
         //Only calculate average if there is at least 1 beer added for the current logged-in user
         if (this.context.beers.length >= 1) {
             let sum = averageAbv.reduce((previous, current) => current += previous);
             let avg = sum / averageAbv.length;
-            let avgFixed = avg.toFixed(2)
-            return avgFixed
+            let avgFixed = avg.toFixed(2);
+            return avgFixed;
         } else {
-            avgFixed = 'You do not have any beers added yet'
+            avgFixed = 'You do not have any beers added yet';
         }
         
         return (
