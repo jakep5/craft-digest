@@ -170,6 +170,10 @@ p#signInLinkLanding {
   background-color: #fff;
   z-index: 1;
 }
+
+div.titleHolder {
+  margin-top: -100px;
+}
 /**/
 
 @media only screen and (min-width: 1024px) {

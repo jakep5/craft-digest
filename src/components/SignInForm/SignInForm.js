@@ -1,7 +1,7 @@
 import React from 'react'
 import TokenServiceObject from '../../services/token-service'
 import AuthApiServiceObject from '../../services/auth-api-service'
-import BeerContext, { BeerConsumer } from '../../contexts/BeerContext'
+import BeerContext from '../../contexts/BeerContext'
 import BarLoader from 'react-spinners/BarLoader'
 import { css } from '@emotion/core'
 import './SignInForm.css'

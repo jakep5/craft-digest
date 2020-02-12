@@ -12,8 +12,6 @@ class App extends React.Component {
   render() {
 
     return (
-      <>
-          <body>
               <main className='App'>
                 <Switch>
                   <Route 
@@ -43,8 +41,6 @@ class App extends React.Component {
                   />
                 </Switch>
               </main>
-          </body>
-      </>
     )
   }
 }

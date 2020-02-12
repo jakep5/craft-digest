@@ -51,11 +51,10 @@ export default class SignInPage extends React.Component {
                     </Link>
                 </nav>
                 <div role="article" className="signInWrapper">
-                    <div className="signInHolder">
+                    
                         <h1 className="signIn">Sign in to Craft Digest!</h1>
 
                         <SignInForm onLoginSuccess={this.handleLoginSuccess}/>
-                    </div>
                 </div>
             </>
         )

@@ -53,9 +53,9 @@ header.signIn {
 
 h1.signUp {
   position: relative;
-  top: 4%;
-  margin-left: 3%;
-  margin-right: 3%;
+  top: 7%;
+  font-size: 30px;
+  left: 15px;
 }
 
 p#signInLink {
@@ -66,6 +66,10 @@ p#signInLink {
 
 div.signUpWrapper {
   background-image: url("https://images.alphacoders.com/741/thumb-1920-74183.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin-top: 0%;
 }
 
 div.dummyAccount {
@@ -75,14 +79,16 @@ div.dummyAccount {
 @media only screen and (min-width:1024px) {
   h1.signUp {
     position: absolute;
-    top: 12%;
-    right: 360px;
+    top: 7%;
+    display: block;
+    width: 100%;
+    font-size: 45px;
     margin-left: 0%;
     margin-right: 0%;
   }
 
   div.signUpWrapper {
-    background-image: url("https://images8.alphacoders.com/413/thumb-1920-413078.jpg");
+    background-image: url("https://images.alphacoders.com/741/thumb-1920-74183.jpg");
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -93,5 +99,19 @@ div.dummyAccount {
     display: block;
     margin-left: 32%;
     margin-top: 0%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1.signUp {
+    left: 0px;
+  }
+}
+
+/* Special styles for iPad */
+
+@media only screen and (min-height: 1000px) {
+  div.log-form {
+    top: 450px !important;
   }
 }
