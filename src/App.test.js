@@ -4,7 +4,6 @@ import TestObject from './store';
 import BeerProvider, { BeerContext } from './contexts/BeerContext';
 import SignInForm from './components/SignInForm/SignInForm';
 import SignUpForm from './components/SignUpForm/SignUpForm';
-import BeerTriedList from './components/BeerTriedList/BeerTriedList';
 import CommonTastingNotes from './components/CommonTastingNotes/CommonTastingNotes'
 import { BrowserRouter } from 'react-router-dom';
 import Nav from './components/Nav/Nav'
@@ -115,15 +114,4 @@ describe('Basic smoke tests', () => {
       </BeerContext.Provider>, div)
     ReactDOM.unmountComponentAtNode(div);
   })
-
-  /* it('Tried list renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(
-      <BrowserRouter>
-        <BeerContext.Provider value={TestObject}>
-          <BeerTriedList />
-        </BeerContext.Provider>
-      </BrowserRouter>, div);
-    ReactDOM.unmountComponentAtNode(div);
-  }) */
 })
