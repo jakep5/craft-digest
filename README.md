@@ -14,9 +14,9 @@ React.js, CSS3, Node.js, jQuery, Express, PostgreSQL, JWT authentication
 
 ### Summary
 
-This app allows users to create their own list of beers that they have tried, along with stats regarding beers in the list. Available stats currently include average ABV, favorite brewery, number of neers added, and a bubble chart of common tasting notes. Users are allowed to create their own account and store beers on their account. 
+This app allows users to create their own list of beers that they have tried, along with stats regarding beers in the list. Available stats currently include average ABV, favorite brewery, number of beers added, and a bubble chart of common tasting notes. Users are allowed to create their own account and store beers on their account. 
 
-### Motiavtion
+### Motivation
 
 This app was built with the idea that many people tend to forget beers they have tried in the past. This application hopes to serve as a tool that users can reference when trying to remember a beer they have tried in the past. With this in mind, users have the ability to add various details for each beer in hopes to spark the memory of the beer as much as possible.
 

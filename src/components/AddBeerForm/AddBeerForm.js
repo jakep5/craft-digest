@@ -39,7 +39,7 @@ class AddBeerForm extends Component {
 
         return (
             <div className="addBeerHolder">
-                <form id="beerSearchForm" onSubmit={(e) => this.handleSubmit(e)} role="form">
+                <form id="beerSearchForm" onSubmit={(e) => this.handleSubmit(e)}>
                         <legend className="formLegend">Add a beer:</legend>
 
                         <label htmlFor="beerName" required>Name of beer:</label>

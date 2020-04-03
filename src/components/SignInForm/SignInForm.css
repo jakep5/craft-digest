@@ -4,20 +4,20 @@
 
 input#signInUsername {
   margin-left: 1%;
+  margin-top: -30px;
   position: relative;
   left: 4%;
 }
 
 input#signInPassword {
   margin-left: 1%;
-  margin-top: 1.5%;
+  margin-top: -30px;
   position: relative;
   left: 5%;
 }
 
 button#logInButton {
     position: relative;
-    top: 30px;
     left: 50px;
     background-color: #3B2215;
     padding: 15px 50px;
@@ -74,7 +74,7 @@ body {
 }
 
 .log-form {
-  width: 40%;
+  width: 450px;
   min-width: 320px;
   max-width: 475px;
   background: #fff;
@@ -112,6 +112,7 @@ body {
   display: block;
   width: 100%;
   padding: 2em;
+  padding-bottom: .5em;
 }
 
 .log-form h2 {
@@ -178,12 +179,12 @@ p.dummy {
 }
 
 div.dummy {
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 div.loadingHolder {
   display: inline-block;
-  height: 100px;
+  height: 20px;
   width: 100px;
   position: relative;
   bottom: 50px;
@@ -220,14 +221,22 @@ button#logInButton:active, button#signUpButton:active {
 @media only screen and (min-width: 500px) {
   input#signInPassword {
       left: 8px;
+      margin-top: -30px;
   }
 
   input#signInUsername {
       left: 5px;
+      margin-top: -30px;
   }
 
   .log-form input {
       font-size: 20px;
       font-family: 'Montserrat', sans-serif;
+  }
+
+  p.red {
+    margin-top: -20px;
+    font-size: 15px;
+    margin-bottom: 0px;
   }
 }
