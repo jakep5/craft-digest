@@ -42,6 +42,8 @@ p#returnToHome {
     float: left;
     margin-left: 2%;
     margin-top: 0%;
+    position: relative;
+    bottom: 10px;
 }
 
 button {
@@ -70,6 +72,8 @@ p#signInLink {
     display: inline-block;
     margin-right: 1%;
     margin-top: -1%;
+    position: relative;
+    bottom: 10px;
 }
 
 h1.signIn {

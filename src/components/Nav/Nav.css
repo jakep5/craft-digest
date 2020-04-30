@@ -13,8 +13,8 @@ nav {
 #signUp {
   display: inline-block;
   margin-right: 5%;
-  margin-top: 0%;
   position: relative;
+  bottom: 15px;
   font-size: 17px;
 
 }
@@ -22,10 +22,10 @@ nav {
 #signIn {
   display: inline-block;
   margin-right: 6%;
-  margin-top: 0%;
   margin-bottom: -.5%;
   position: relative;
   font-size: 17px;
+  bottom: 15px;
 }
 
 #beerIcon {
@@ -41,7 +41,7 @@ nav.landingNav {
 @media only screen and (min-width: 768px) {
   #beerIcon {
     font-size: 35px;
-    top: 20%;
+    top: 15%;
   }
 
   nav.landingNav {

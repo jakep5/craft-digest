@@ -58,6 +58,6 @@ nav.addToListNav {
     }
 
     nav.addToListNav {
-        width: calc(100% - 17px)
+        width: calc(100%)
     }
 }

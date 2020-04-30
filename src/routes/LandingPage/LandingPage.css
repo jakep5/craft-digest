@@ -180,6 +180,7 @@ div.titleHolder {
   header.homePage {
     background-image: url("https://images8.alphacoders.com/413/thumb-1920-413078.jpg");
   }
+  
 
   div.titleHolder {
     display: block;
@@ -213,7 +214,7 @@ div.titleHolder {
   }
 } 
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1024px) {
   .individual-bubble {
     display: none;
   }

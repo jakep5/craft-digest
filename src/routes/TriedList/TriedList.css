@@ -38,6 +38,8 @@ p#logOutLink {
     display: inline-block;
     margin-right: 2%;
     margin-top: 0%;
+    position: relative;
+    bottom: 10px;
 }
 
 p#recommendBeer {
